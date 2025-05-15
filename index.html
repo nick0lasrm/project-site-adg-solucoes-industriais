@@ -16,22 +16,44 @@
 
 <body>
 
-    <!----HEADER/NAVIGATION---->
-    <header>
+    <!--HEADER/NAVIGATION-->
+    <header class="header_style">
 
-        <div>
-            <div>
-
+        <div class="container header_navbar_wrapper">
+            <div class="me-auto" id="logo_style">
+                <img src="/imgs-icons/logo_ADG-no-background.png" alt="logo_ADG">
             </div>
-            <div>
+            <ul class="navbar_style">
+                <li><a class="nav_link" href="#">INÍCIO</a></li>
+                <li><a class="nav_link" href="#sobre">SOBRE</a></li>
+                <li><a class="nav_link" href="#servicos">SERVIÇOS</a></li>
+                <li><a class="nav_link" href="#produtos">PRODUTOS</a></li>
+                <li><a class="nav_link" href="#contato">CONTATO</a></li>
+            </ul>
 
-            </div>
-            <div>
+            <button onclick="animar()" id="btn_menu">
+                <span class="linha_btn"></span>
+                <span class="linha_btn"></span>
+                <span class="linha_btn"></span>
+            </button>
 
+            <div id="mobile_menu" class="mobile_menu_view">
+                <nav>
+                    <ul class="mobile_menu">
+                        <li><a class="nav_link" href="#">INÍCIO</a></li>
+                        <hr>
+                        <li><a class="nav_link" href="#sobre">SOBRE</a></li>
+                        <hr>
+                        <li><a class="nav_link" href="#servicos">SERVIÇOS</a></li>
+                        <hr>
+                        <li><a class="nav_link" href="#produtos">PRODUTOS</a></li>
+                        <hr>
+                        <li><a class="nav_link" href="#contato">CONTATO</a></li>
+                        <hr>
+                    </ul>
+                </nav>
             </div>
-            <div>
 
-            </div>
         </div>
 
     </header>

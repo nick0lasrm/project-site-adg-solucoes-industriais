@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 200ms ease-in;
+}
+
+body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+}
+
+body hr {
+    width: 100%;
+    color: #e00909a1;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(0deg, #55030383, #771616f3, #5503038f);
+    border-radius: 10px;
+}
+
+/*-----HEADER/NAVBAR------*/
+
+.header_style {
+    background-color: #000000;
+    box-shadow: 0px 7px 9px -6px rgba(0, 0, 0, .3);
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+
+.header_navbar_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: .7rem 0;
+}
+
+
+.navbar_style {
+    display: inline-flex;
+    gap: 2rem;
+    padding: 0;
+}
+
+.nav_link {
+    position: relative;
+}
+
+.nav_link {
+    color: #c50808;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav_link::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #ce0404;
+    transform: scaleX(0);
+    transition: .3s ease;
+}
+
+.nav_link:hover::before,
+.btn_menu:hover {
+    transform: scaleX(1);
+    color: #ff0000;
+}
+
+.linha_btn {
+    display: none;
+    width: 28px;
+    height: 3px;
+    background-color: #ce0404;
+    margin: 5px auto;
+    position: relative;
+    transform-origin: center;
+}
+
+button.ativar .linha_btn:nth-child(1) {
+    transform: translateY(7px) rotate(-45deg);
+}
+
+button.ativar .linha_btn:nth-child(3) {
+    transform: translateY(-9px) rotate(45deg);
+}
+
+button.ativar .linha_btn:nth-child(2) {
+    width: 0;
+}
+
+
+#logo_style {
+    z-index: 10;
+    width: 180px;
+}
+
+.logo_style {
+    margin-right: 30px;
+    width: 250px;
+    height: 150px;
+}
+
+
+.mobile_menu_view {
+    position: absolute;
+    background-color: #000;
+    background-image: linear-gradient(0deg, #000000 50%, #1a07078a);
+    box-shadow: 0 3px 6px #00000062;
+    right: 0;
+    top: 118px;
+    width: 100%;
+    padding: 3rem 1rem;
+    transform: translateY(-150%);
+    transition: all .2s ease-in;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.mobile_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.3rem;
+    padding: 0 2rem;
+}
+
+.expand_menu {
+    transform: translateY(0);
+    transition: all .2s ease-in-out;
+}
