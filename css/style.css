@@ -378,3 +378,19 @@ button.ativar .linha_btn:nth-child(2) {
     padding: 0;
     width: 45%;
 }
+
+
+.contact_icon {
+    min-width: 55px;
+    background-color: #12d312;
+    border-radius: 50%;
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    opacity: 80%;
+}
+
+.contact_icon:hover {
+    background-color: #1da51d;
+    transition: all .3s ease;
+}
