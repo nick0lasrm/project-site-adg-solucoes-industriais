@@ -167,6 +167,20 @@ button.ativar .linha_btn:nth-child(2) {
     text-align: center;
 }
 
+.section_divider {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0 30px;
+    color: #a11010;
+}
+
+.section_divider h3 {
+    font-size: 50px;
+}
+
 
 /*----------HERO-SECTION-----------*/
 
@@ -219,4 +233,69 @@ button.ativar .linha_btn:nth-child(2) {
     color: #c9c9c9;
     transform: scale(1.1);
     transition: all .3s ease;
+}
+
+/*------ABOUT-US-------*/
+
+.title_section_sobre {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.title_section_sobre h2 {
+    color: #ffffffcb;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.text_section_sobre h1 {
+    line-height: 2.5rem;
+    text-align: left;
+    font-weight: 600;
+    color: #a7a7a7;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+.section_sobre_items {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 4rem;
+}
+
+.items_child_sobre {
+    background-color: #00000081;
+    border: 2px solid rgba(131, 10, 10, 0.473);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 27%;
+    padding: 1rem 2rem 2rem;
+}
+
+.items_child_sobre:hover {
+    transform: scale(1.05);
+    transition: all .2s ease;
+    box-shadow: 0px 7px 9px 6px rgba(0, 0, 0, 0.589);
+}
+
+
+.items_child_sobre h2 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.items_child_sobre p {
+    color: #dbdbdb;
+    font-size: large;
+    margin: 0;
 }
