@@ -235,6 +235,7 @@ button.ativar .linha_btn:nth-child(2) {
     transition: all .3s ease;
 }
 
+
 /*------ABOUT-US-------*/
 
 .title_section_sobre {
@@ -298,4 +299,82 @@ button.ativar .linha_btn:nth-child(2) {
     color: #dbdbdb;
     font-size: large;
     margin: 0;
+}
+
+
+/*--------SERVICES--------*/
+
+.section_services_items {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 0 4rem;
+}
+
+.items_services {
+    background-color: #00000081;
+    border-radius: 5px;
+
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+}
+
+
+.item_service01 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.items_child_services {
+    width: 40%;
+}
+
+.img_service {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.service_info h2, .more_info_service h2 {
+    font-size: x-large;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.service_info p {
+    font-size: 15px;
+    color: #c4c4c4;
+    margin: 0;
+}
+
+.details_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.details_info h1 {
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.details_info h5 {
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.details_info p {
+    font-size: small;
+    color: #c4c4c4;
+    margin: 0;
+}
+
+
+.item_service02 {
+    padding: 0;
+    width: 45%;
 }
