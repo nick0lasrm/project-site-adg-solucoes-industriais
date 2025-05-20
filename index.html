@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,7 @@
 <body>
 
     <!--HEADER/NAVIGATION-->
+    <a id="top"></a>
     <header class="header_style">
 
         <div class="container header_navbar_wrapper">
@@ -40,7 +41,7 @@
             <div id="mobile_menu" class="mobile_menu_view">
                 <nav>
                     <ul class="mobile_menu">
-                        <li><a class="nav_link" href="#">INÍCIO</a></li>
+                        <li><a class="nav_link" onclick="closemenu()" href="#">INÍCIO</a></li>
                         <hr>
                         <li><a class="nav_link" href="#sobre">SOBRE</a></li>
                         <hr>
@@ -58,176 +59,360 @@
 
     </header>
 
-    <!-----HERO-SECTION----->
-    <section class="section_style">
-        <div class="style_sections section_inicio">
-            <div class="container text_section_inicio">
-                <h2>SOLUÇÕES INDUSTRIAIS</h2>
-                <h1>A ADG LTDA oferece soluções para a Industria, fornecendo tecnologia e inovação para otimizar seus
-                    processos Industriais, aumentar a produtividade e reduzir custos operacionais</h1>
-            </div>
-            <a class="style_button" href="#servicos">NOSSOS SERVIÇOS</a>
-        </div>
-    </section>
-
-
-    <!-----ABOUT-US------>
-    <a id="sobre"></a>
-    <section class="section_style">
-
-        <div class="style_sections section_sobre">
-            <div class="section_divider">
-                <h3 class="fw-bold">SOBRE NÓS</h3>
-            </div>
-            <div class="container title_section_sobre">
-                <h2>ADG SOLUÇÕES INDUSTRIAIS LTDA</h2>
-                <img class="logo_style" src="/imgs-icons/logo_ADG-no-background.png" alt="logo_ADG">
-            </div>
-            <div class="container text_section_sobre">
-                <h1>Fundada em 2022, a <b>ADG Soluções Industriais Ltda</b> atua oferecendo <b>peças de reposição para
-                        máquinas de corte a laser</b> e serviços de <b>manutenção preventiva e preditiva em equipamentos
-                        industriais.</b>
-
-                    <br>Com parcerias internacionais — incluindo empresas da <b>China, Itália, Japão e Alemanha, como a
-                        renomada Precitec</b> — trazemos ao mercado brasileiro soluções modernas, seguras e de alto
-                    desempenho.
-
-                    Localizada em <b>Sorocaba/SP</b>, a ADG está estrategicamente posicionada para oferecer
-                    <b>atendimento
-                        ágil e
-                        especializado</b> a clientes em todo o Brasil.
-                </h1>
-            </div>
-        </div>
-
-        <div class="container section_sobre_items">
-            <div class="items_child_sobre">
-                <img width="150" src="/imgs-icons/mission_icon.svg" alt="Missão">
-                <h2>Missão</h2>
-                <p>Empoderar o setor industrial com soluções em peças e manutenção, unindo agilidade, eficiência e
-                    inovação nos processos produtivos.</p>
-            </div>
-            <div class="items_child_sobre">
-                <img width="150" src="/imgs-icons/vision_icon.svg" alt="Visão">
-                <h2>Visão</h2>
-                <p>Ser reconhecida como líder em insumos industriais, promovendo crescimento sustentável e tecnológico,
-                    com parcerias sólidas e duradouras.</p>
-            </div>
-            <div class="items_child_sobre">
-                <img width="150" src="/imgs-icons/values_icon.svg" alt="Valores">
-                <h2>Valores</h2>
-                <p>Valorizamos o <b>compromisso com o cliente</b>, a <b>qualidade</b>, a <b>inovação</b>, a
-                    <b>transparência</b> e a <b>segurança</b> em
-                    tudo o que fazemos.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-----SERVICES------>
-    <a id="servicos"></a>
-    <section class="section_style">
-
-        <div class="style_sections section_services">
-            <div class="section_divider">
-                <h3 class="fw-bold">NOSSOS SERVIÇOS</h3>
-            </div>
-        </div>
-
-        <!----SERVICE-1---->
-        <div class="container section_services_items">
-
-            <div class="items_services  item_service01">
-                <div class="items_child_services">
-                    <img class="img_service" src="/imgs-icons/services/Manutenção.png" alt="Manutenção">
-                    <div class="service_info">
-                        <h2>Plano de Manutenção Preventiva e Preditiva</h2>
-                        <p>Nosso plano de manutenção visa garantir a máxima eficiência, segurança
-                            operacional e prolongar a vida útil dos equipamentos industriais. Através da
-                            execução sistemática de atividades preventivas e preditivas, minimizamos
-                            paradas não programadas e otimizamos o desempenho operacional.
-                            A ADG SOLUÇÕES INDUSTRIEIS LTDA desenvolveu um sistema abrangente
-                            que cobre todos os aspectos críticos dos equipamentos, desde
-                            componentes mecânicos até sistemas elétricos, garantindo um
-                            funcionamento contínuo e seguro.</p>
-                    </div>
+    <main>
+        <!-----HERO-SECTION----->
+        <section class="section_style">
+            <div class="style_sections section_inicio">
+                <div class="container text_section_inicio">
+                    <h2>SOLUÇÕES INDUSTRIAIS</h2>
+                    <h1>A ADG LTDA oferece soluções para a Industria, fornecendo tecnologia e inovação para otimizar
+                        seus
+                        processos Industriais, aumentar a produtividade e reduzir custos operacionais</h1>
                 </div>
-                <div class="more_info_service">
-                    <h2>Benefícios da Manutenção <br>
-                        Preventiva/Preditiva</h2>
-                    <div class="details_info">
-                        <ul>
-                            <li>
-                                <h1>90%</h1>
-                            </li>
-                            <li>
-                                <h5>Redução de paradas</h5>
-                            </li>
-                            <li>
-                                <p>Diminuição significativa de interrupções não programadas</p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h1>60%</h1>
-                            </li>
-                            <li>
-                                <h5>Aumento da Vida Útil</h5>
-                            </li>
-                            <li>
-                                <p>Prolongamento da durabilidade dos equipamentos</p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h1>30%</h1>
-                            </li>
-                            <li>
-                                <h5>Eficiência Energética</h5>
-                            </li>
-                            <li>
-                                <p>Melhoria no consumo de energia</p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <h1>40%</h1>
-                            </li>
-                            <li>
-                                <h5>Redução de Custos</h5>
-                            </li>
-                            <li>
-                                <p>Otimização do custo total de manutenção</p>
-                            </li>
-                        </ul>
-                    </div>
+                <a class="style_button" href="#servicos">NOSSOS SERVIÇOS</a>
+            </div>
+        </section>
+
+
+        <!-----ABOUT-US------>
+        <a id="sobre"></a>
+        <section class="section_style">
+
+            <div class="style_sections">
+                <div class="section_divider">
+                    <h3>SOBRE NÓS</h3>
+                </div>
+                <div class="container title_section_sobre">
+                    <h2>ADG SOLUÇÕES INDUSTRIAIS LTDA</h2>
+                    <img class="logo_style_sec_about" src="/imgs-icons/logo_ADG-no-background.png" alt="logo_ADG">
+                </div>
+                <div class="container text_section_sobre">
+                    <p>Fundada em 2022, a <b>ADG Soluções Industriais Ltda</b> atua oferecendo <b>peças de reposição
+                            para
+                            máquinas de corte a laser</b> e serviços de <b>manutenção preventiva e preditiva em
+                            equipamentos
+                            industriais.</b>
+
+                        <br>Com parcerias internacionais, incluindo empresas da <b>China, Itália, Japão e Alemanha,
+                            como a
+                            renomada Precitec</b>, trazemos ao mercado brasileiro soluções modernas, seguras e de alto
+                        desempenho.
+
+                        Localizada em <b>Sorocaba/SP</b>, a ADG está estrategicamente posicionada para oferecer
+                        <b>atendimento
+                            ágil e
+                            especializado</b> a clientes em todo o Brasil.
+                    </p>
                 </div>
             </div>
 
-            <div class="items_services item_service02">
-                <div class="items_child">
-                    <img class="img_service" src="/imgs-icons/services/Lubrificação.png" alt="Manutenção">
-                    <div class="service_info">
-                        <h2>Lubrificação de componentes Mecânicos</h2>
-                        <p></p>
-                    </div>
+            <div class="container items_child_wrapper">
+                <div class="items_child_sobre">
+                    <img width="150" src="/imgs-icons/mission_icon.svg" alt="Missão">
+                    <h2>Missão</h2>
+                    <p>Empoderar o setor industrial com soluções em peças e manutenção, unindo agilidade, eficiência e
+                        inovação nos processos produtivos.</p>
+                </div>
+                <div class="items_child_sobre">
+                    <img width="150" src="/imgs-icons/vision_icon.svg" alt="Visão">
+                    <h2>Visão</h2>
+                    <p>Ser reconhecida como líder em insumos industriais, promovendo crescimento sustentável e
+                        tecnológico,
+                        com parcerias sólidas e duradouras.</p>
+                </div>
+                <div class="items_child_sobre">
+                    <img width="150" src="/imgs-icons/values_icon.svg" alt="Valores">
+                    <h2>Valores</h2>
+                    <p>Valorizamos o <b>compromisso com o cliente</b>, a <b>qualidade</b>, a <b>inovação</b>, a
+                        <b>transparência</b> e a <b>segurança</b> em
+                        tudo o que fazemos.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-----SERVICES------>
+        <a id="servicos"></a>
+        <section class="section_style">
+
+            <div class="style_sections">
+                <div class="section_divider">
+                    <h3>NOSSOS SERVIÇOS</h3>
                 </div>
             </div>
 
-        </div>
+            <!----SERVICE-1---->
+            <div class="container section_wrapper">
+                <div class="title_service">
+                    <h1>Plano de Manutenção Preventiva e Preditiva</h1>
+                </div>
+                <div class="items_services">
+                    <div class="items_child">
+                        <img class="img_service" src="/imgs-icons/services/Manutenção.png" alt="Manutenção">
+                        <div class="service_info">
+                            <div>
+                                <p>Nosso plano de manutenção visa garantir a máxima eficiência, segurança
+                                    operacional e prolongar a vida útil dos equipamentos industriais. Através da
+                                    execução sistemática de atividades preventivas e preditivas, minimizamos
+                                    paradas não programadas e otimizamos o desempenho operacional.
+                                    A ADG SOLUÇÕES INDUSTRIEIS LTDA desenvolveu um sistema abrangente
+                                    que cobre todos os aspectos críticos dos equipamentos, desde
+                                    componentes mecânicos até sistemas elétricos, garantindo um
+                                    funcionamento contínuo e seguro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items_child service_info">
+                        <h2>Benefícios da Manutenção
+                            Preventiva/Preditiva</h2>
+                        <div>
+                            <h1>90%</h1>
+                            <h5>Redução de paradas</h5>
+                            <p>Diminuição significativa de interrupções não programadas</p>
+                        </div>
+                        <div>
+                            <h1>60%</h1>
+                            <h5>Aumento da Vida Útil</h5>
+                            <p>Prolongamento da durabilidade dos equipamentos</p>
+                        </div>
+                        <div>
+                            <h1>30%</h1>
+                            <h5>Eficiência Energética</h5>
+                            <p>Melhoria no consumo de energia</p>
+                        </div>
+                        <div>
+                            <h1>40%</h1>
+                            <h5>Redução de Custos</h5>
+                            <p>Otimização do custo total de manutenção</p>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
+                <div class="items_services">
+                    <div class="items_child">
+                        <img class="img_service" src="/imgs-icons/services/Lubrificação.png" alt="Manutenção">
+                        <h3>Lubrificação de Componentes Mecânicos</h3>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Aplicação de
+                                    Lubrificantes
+                                </h4>
+                                <p>
+                                    Utilizamos lubrificantes
+                                    específicos para patins, eixos
+                                    e guias lineares, garantindo
+                                    movimentos suaves e
+                                    precisos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Redução de Atrito
+                                </h4>
+                                <p>
+                                    O processo evita desgaste
+                                    prematuro e assegura a
+                                    suavidade nos movimentos
+                                    mecânicos dos
+                                    equipamentos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Frequência Programada
+                                </h4>
+                                <p>
+                                    Seguimos rigorosamente o manual do fabricante ou análise de
+                                    condição, normalmente em ciclos mensais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items_child">
+                        <img class="img_service" src="/imgs-icons/services/SistemaExaustao.png" alt="Manutenção">
+                        <h3>Sistema de Exaustão e Ar Comprimido</h3>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Verificação dos
+                                    Filtros de Exaustão
+                                </h4>
+                                <p>
+                                    Inspecionamos regularmente os
+                                    filtros quanto à saturação e
+                                    integridade, garantindo a eficiência
+                                    na extração de partículas
+                                    contaminantes do ambiente de
+                                    trabalho.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Troca dos Filtros do
+                                    Secador de Ar
+                                </h4>
+                                <p>
+                                    Substituímos filtros coalescentes e
+                                    de partículas para assegurar a
+                                    qualidade do ar comprimido,
+                                    prevenindo a entrada de umidade e
+                                    contaminantes no sistema
+                                    pneumático.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Manutenção do Compressor
+                                </h4>
+                                <p>
+                                    Realizamos a troca periódica dos filtros de ar de admissão e óleo, mantendo a
+                                    eficiência do compressor e protegendo os componentes internos contra falhas
+                                    prematuras.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!----SECTION03---->
-    <section>
+                <div class="items_services">
+                    <div class="items_child">
+                        <img class="img_service" src="/imgs-icons/services/Lubrificação.png" alt="Manutenção">
+                        <h3>Lubrificação de Componentes Mecânicos</h3>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Aplicação de
+                                    Lubrificantes
+                                </h4>
+                                <p>
+                                    Utilizamos lubrificantes
+                                    específicos para patins, eixos
+                                    e guias lineares, garantindo
+                                    movimentos suaves e
+                                    precisos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Redução de Atrito
+                                </h4>
+                                <p>
+                                    O processo evita desgaste
+                                    prematuro e assegura a
+                                    suavidade nos movimentos
+                                    mecânicos dos
+                                    equipamentos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Frequência Programada
+                                </h4>
+                                <p>
+                                    Seguimos rigorosamente o manual do fabricante ou análise de
+                                    condição, normalmente em ciclos mensais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items_child">
+                        <img class="img_service" src="/imgs-icons/services/SistemaExaustao.png" alt="Manutenção">
+                        <h3>Sistema de Exaustão e Ar Comprimido</h3>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Verificação dos
+                                    Filtros de Exaustão
+                                </h4>
+                                <p>
+                                    Inspecionamos regularmente os
+                                    filtros quanto à saturação e
+                                    integridade, garantindo a eficiência
+                                    na extração de partículas
+                                    contaminantes do ambiente de
+                                    trabalho.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Troca dos Filtros do
+                                    Secador de Ar
+                                </h4>
+                                <p>
+                                    Substituímos filtros coalescentes e
+                                    de partículas para assegurar a
+                                    qualidade do ar comprimido,
+                                    prevenindo a entrada de umidade e
+                                    contaminantes no sistema
+                                    pneumático.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service_description">
+                            <div>
+                                <h4>
+                                    Manutenção do Compressor
+                                </h4>
+                                <p>
+                                    Realizamos a troca periódica dos filtros de ar de admissão e óleo, mantendo a
+                                    eficiência do compressor e protegendo os componentes internos contra falhas
+                                    prematuras.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </section>
+            </div>
 
-    <!----SECTION04---->
-    <section>
+        </section>
 
-    </section>
+        <!-----PRODUCTS------>
+        <a id="produtos"></a>
+        <section class="section_style">
+
+            <div class="style_sections">
+                <div class="container section_divider">
+                    <h3 class="fw-bold">PRODUTOS</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-----CONTACT------>
+        <a id="contato"></a>
+        <section class="section_style">
+
+            <div class="style_sections section_contact">
+                <div class="container section_divider">
+                    <h3 class="fw-bold">CONTATO</h3>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
     <!----CONTACT-BUTTON----->
     <div class="contact_icon" title="Mande uma mensagem!">
@@ -235,6 +420,15 @@
             target="_blank" rel="external"><img class="p-1" src="/imgs-icons/icons8-whatsapp.svg" alt="icon_whatsapp"
                 width="55" height="55"></a>
     </div>
+
+    <!----BACK-TO-TOP-BUTTON---->
+    <a href="#top" class="back_top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+        </svg>
+    </a>
 
     <script src="/javaScript/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

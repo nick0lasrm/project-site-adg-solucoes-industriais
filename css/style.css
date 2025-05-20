@@ -7,7 +7,6 @@
 body * {
     font-family: 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
-    transition: all 200ms ease-in;
 }
 
 body ul {
@@ -20,11 +19,40 @@ body a {
     text-decoration: none;
 }
 
+body p {
+    color: #d4d4d4;
+    margin: 0;
+}
+
+body h1,
+body h2 {
+    color: #dbdbdb;
+    font-weight: 800;
+}
+
+body h3,
+body h4 {
+    color: #ececec;
+    font-weight: 800;
+}
+
 body hr {
     width: 100%;
     color: #e00909a1;
     margin: 0;
 }
+
+body h5 {
+    color: #dbdbdb;
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+label {
+    color: #dbdbdb;
+}
+
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -46,14 +74,12 @@ body hr {
     top: 0;
 }
 
-
 .header_navbar_wrapper {
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: .7rem 0;
 }
-
 
 .navbar_style {
     display: inline-flex;
@@ -82,8 +108,7 @@ body hr {
     transition: .3s ease;
 }
 
-.nav_link:hover::before,
-.btn_menu:hover {
+.nav_link:hover::before {
     transform: scaleX(1);
     color: #ff0000;
 }
@@ -96,6 +121,7 @@ body hr {
     margin: 5px auto;
     position: relative;
     transform-origin: center;
+    transition: all 200ms ease;
 }
 
 button.ativar .linha_btn:nth-child(1) {
@@ -110,18 +136,16 @@ button.ativar .linha_btn:nth-child(2) {
     width: 0;
 }
 
-
 #logo_style {
     z-index: 10;
     width: 180px;
 }
 
-.logo_style {
+.logo_style_sec_about {
     margin-right: 30px;
     width: 250px;
     height: 150px;
 }
-
 
 .mobile_menu_view {
     position: absolute;
@@ -137,7 +161,6 @@ button.ativar .linha_btn:nth-child(2) {
     border-radius: 0 0 5px 5px;
 }
 
-
 .mobile_menu {
     display: flex;
     flex-direction: column;
@@ -150,6 +173,7 @@ button.ativar .linha_btn:nth-child(2) {
     transform: translateY(0);
     transition: all .2s ease-in-out;
 }
+
 
 /*------SECTIONS-----*/
 
@@ -174,15 +198,16 @@ button.ativar .linha_btn:nth-child(2) {
     align-items: center;
     justify-content: center;
     margin: 35px 0 30px;
-    color: #a11010;
 }
 
 .section_divider h3 {
     font-size: 50px;
+    color: #a11010;
 }
 
 
 /*----------HERO-SECTION-----------*/
+
 
 .section_inicio {
     padding-bottom: 15%;
@@ -244,7 +269,6 @@ button.ativar .linha_btn:nth-child(2) {
     margin-bottom: 1rem;
 }
 
-
 .title_section_sobre h2 {
     color: #ffffffcb;
     font-size: 30px;
@@ -252,16 +276,15 @@ button.ativar .linha_btn:nth-child(2) {
     margin-right: auto;
 }
 
-.text_section_sobre h1 {
+.text_section_sobre p {
     line-height: 2.5rem;
     text-align: left;
     font-weight: 600;
-    color: #a7a7a7;
-    font-size: 23px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
-.section_sobre_items {
+.items_child_wrapper {
     display: flex;
     justify-content: center;
     padding: 0 0 4rem;
@@ -290,95 +313,72 @@ button.ativar .linha_btn:nth-child(2) {
 }
 
 
-.items_child_sobre h2 {
-    color: #ffffff;
-    font-weight: 700;
-}
-
-.items_child_sobre p {
-    color: #dbdbdb;
-    font-size: large;
-    margin: 0;
-}
-
-
 /*--------SERVICES--------*/
 
-.section_services_items {
+.section_wrapper {
+    background-color: #0000007a;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    padding: 0 0 4rem;
-}
-
-.items_services {
-    background-color: #00000081;
-    border-radius: 5px;
-
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 3rem;
     padding: 2rem 0;
 }
 
-
-.item_service01 {
-    display: flex;
-    justify-content: space-around;
+.title_service {
+    border-radius: 5px;
+    text-align: center;
 }
 
-.items_child_services {
-    width: 40%;
+.items_services {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
 }
 
 .img_service {
+    border: 1px solid #490505;
     width: 100%;
     margin-bottom: 1rem;
 }
 
-.service_info h2, .more_info_service h2 {
-    font-size: x-large;
-    color: #ffffff;
-    font-weight: 800;
-}
-
-.service_info p {
-    font-size: 15px;
-    color: #c4c4c4;
-    margin: 0;
-}
-
-.details_info {
+.items_child {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    width: 41%;
 }
 
-.details_info h1 {
-    margin-top: 10px;
-    color: #ffffff;
-    font-weight: 800;
+.service_info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.details_info h5 {
-    color: #ffffff;
-    font-size: medium;
-    font-weight: 700;
-    margin-bottom: 0;
+.service_description {
+    display: flex;
+    margin-top: 1rem;
+    background-color: #530707ad;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
-.details_info p {
-    font-size: small;
-    color: #c4c4c4;
-    margin: 0;
+.service_description p {
+    font-size: 13px;
 }
 
 
-.item_service02 {
-    padding: 0;
-    width: 45%;
-}
 
+/*-----PRODUCTS-----*/
+
+
+
+
+/*-----CONTACT-----*/
+
+
+
+
+
+/*-----CONTACT-BUTTON-----*/
 
 .contact_icon {
     min-width: 55px;
@@ -393,4 +393,59 @@ button.ativar .linha_btn:nth-child(2) {
 .contact_icon:hover {
     background-color: #1da51d;
     transition: all .3s ease;
+}
+
+/*----BACK-TO-TOP-BUTTON----*/
+
+.back_top:hover{
+    color: #e70000;
+    transition: all .3s ease;
+}
+
+.back_top{
+    color: #f5f5f5;
+    min-width: 30px ;
+    position: fixed;
+    right: 2rem;
+    bottom: 5.5rem;
+
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 2;
+}
+
+.back_top.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .linha_btn {
+        display: block;
+    }
+
+    .header_style {
+        position: relative;
+        box-shadow: none;
+        border-bottom: 2px solid #f00;
+    }
+
+    .navbar_style {
+        display: none;
+        opacity: 0;
+        transition: all .5s ease-in;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .back_top {
+        display: block;
+    }
 }
