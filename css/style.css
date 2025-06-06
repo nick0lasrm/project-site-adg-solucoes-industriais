@@ -67,7 +67,7 @@ label {
 /*------SECTIONS-----*/
 
 .section_style {
-    background-image: linear-gradient(0deg, #000000ad, #44030325, #000000ad), url(imgs-icons/backgroundImages/backgroundimage1.png);
+    background-image: linear-gradient(0deg, #000000ad, #44030325, #000000ad), url(../imgs-icons/backgroundImages/backgroundimage.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

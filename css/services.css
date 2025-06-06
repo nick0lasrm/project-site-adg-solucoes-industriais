@@ -69,17 +69,7 @@
         text-align: center;
     }
 
-    .items_child {
-        width: 95%;
-        margin: auto;
-    }
-
     .back_top {
         display: block;
-    }
-
-    .items_child_wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 }
