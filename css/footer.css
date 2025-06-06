@@ -5,12 +5,12 @@
 }
 
 .logo_style_footer {
-    width: 25%;
+    width: 20%;
     margin-bottom: 1%;
 }
 
 .child_footer{
-    width: 30%;
+    width: 50%;
 }
 
 .links_style{
@@ -48,15 +48,9 @@ footer hr{
 }
 
 
-@media screen and (max-width: 1024px) {
-    .child_footer {
-        width: 50%;
-    }
-}
-
 
 @media screen and (max-width: 768px) {
     .child_footer {
-        width: 65%;
+        width: 100%;
     }
 }
