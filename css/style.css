@@ -82,10 +82,49 @@ label {
 }
 
 
+/* BUTTON SAIBA MAIS */
+
+.style_button {
+    transition: all .10s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #0000006c;
+    border-radius: 5px;
+
+    font-size: 1.5rem;
+    background-color: #7e1717;
+    color: #adadad;
+} 
+
+.btn_hero_section,
+.btn_service_section{
+    height: 4.5rem;
+    font-weight: 800;
+    padding: 0 1.6rem;
+}
+
+.btn_product_section{
+    width: 100%;
+    height: 2rem;
+    margin-top: 10px;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.style_button:hover {
+    background-color: #af1515;
+    color: #c9c9c9;
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+
 /*------SECTIONS-----*/
 
 .section_style {
-    background-image: linear-gradient(0deg, #000000ad, #44030325, #000000ad), url(../imgs-icons/backgroundImages/backgroundimage.png);
+    background-image: linear-gradient(0deg, #000000ad, #44030369, #000000ad), url(../imgs-icons/backgroundImages/backgroundimage.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -119,6 +158,7 @@ label {
     flex-direction: column;
     gap: 3rem;
     padding: 1rem 0;
+    margin-top: 1rem;
 }
 
 

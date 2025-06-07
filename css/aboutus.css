@@ -1,7 +1,7 @@
 .about_section_wrapper {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .title_section_sobre {
@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .about_section_wrapper{
+    .about_section_wrapper {
         text-align: center;
     }
 
@@ -72,13 +72,13 @@
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
     .title_section_sobre h2 {
-    font-size: 30px;
-}
+        font-size: 30px;
+    }
 
-.text_section_sobre p {
-    font-size: 18px;
-}
+    .text_section_sobre p {
+        font-size: 18px;
+    }
 
 }
