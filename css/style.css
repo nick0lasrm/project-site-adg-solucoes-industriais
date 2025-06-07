@@ -116,7 +116,7 @@ label {
 .style_button:hover {
     background-color: #af1515;
     color: #c9c9c9;
-    transform: scale(1.1);
+    transform: scale(.95);
     transition: all .3s ease;
 }
 
