@@ -3,7 +3,6 @@
 }
 
 .text_section_inicio {
-    position: relative;
     padding: 2%;
 }
 
@@ -68,6 +67,17 @@
 @media screen and (max-width: 575px){
     .text_section_inicio h2 {
         font-size: 55px;
+    }
+
+    .text_section_inicio h1 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .text_section_inicio h2 {
+        font-size: 45px;
     }
 
     .text_section_inicio h1 {

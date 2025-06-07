@@ -19,7 +19,6 @@
 .item_service {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 41%;
 }
 
@@ -43,15 +42,26 @@
 }
 
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .img_service{
+        height: 200px;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .items_child h3 {
         text-align: center;
     }
 
+    .img_service{
+        height: 320px;
+    }
+
     .service_info {
         text-align: center;
     }
+
 
     .items_services {
         flex-direction: column;
@@ -71,5 +81,11 @@
 
     .back_top {
         display: block;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .img_service{
+        height: 260px;
     }
 }

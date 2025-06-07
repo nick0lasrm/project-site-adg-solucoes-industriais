@@ -29,22 +29,6 @@
     letter-spacing: 1px;
 }
 
-.items_box {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0 4rem 0;
-}
-
-.items_child{
-    background-color: #00000081;
-
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-
-    padding: 1rem 2rem 2rem;
-}
 
 .item_about {
     width: 27%;
@@ -78,13 +62,23 @@
     }
 
     .items_box {
+        justify-content: center;
         flex-direction: column;
         gap: 2rem;
     }
 
-
     .items_child {
         width: 95%;
-        margin: auto;
     }
+}
+
+@media screen and (max-width: 375px){
+    .title_section_sobre h2 {
+    font-size: 30px;
+}
+
+.text_section_sobre p {
+    font-size: 18px;
+}
+
 }
