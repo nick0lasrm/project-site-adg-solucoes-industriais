@@ -23,6 +23,7 @@
 }
 
 .text_section_sobre p {
+    padding-bottom: 5%;
     line-height: 2.5rem;
     font-weight: 600;
     font-size: 20px;
@@ -34,6 +35,7 @@
     width: 27%;
     border: 2px solid rgba(131, 10, 10, 0.473);
     border-radius: 5px;
+    align-items: center;
 }
 
 .item_about:hover {
@@ -45,6 +47,7 @@
 @media screen and (max-width: 768px) {
     .about_section_wrapper {
         text-align: center;
+        width: 95%;
     }
 
     .title_section_sobre {
@@ -68,7 +71,7 @@
     }
 
     .items_child {
-        width: 95%;
+        width: 100%;
     }
 }
 
