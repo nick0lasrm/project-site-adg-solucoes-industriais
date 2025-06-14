@@ -48,6 +48,12 @@
     color: #ff0000;
 }
 
+#btn_menu {
+    border: 0;
+    background-color: transparent;
+    display: none;
+}
+
 .linha_btn {
     display: none;
     width: 28px;
@@ -101,7 +107,8 @@ button.ativar .linha_btn:nth-child(2) {
 
 
 @media screen and (max-width: 992px) {
-    .linha_btn {
+
+    .linha_btn, #btn_menu {
         display: block;
     }
 
