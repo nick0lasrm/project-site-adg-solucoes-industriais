@@ -1,8 +1,3 @@
-.items_services {
-    display: flex;
-    padding: 1.5rem 0;
-}
-
 .img_service {
     border-radius: 5px;
     border: 1px solid #490505;
@@ -21,12 +16,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
-    .items_services {
-        flex-direction: column;
-        gap: 5rem;
-        align-items: center;
-    }
 
     .item_service,
     .service_description,
