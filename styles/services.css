@@ -1,0 +1,36 @@
+.items_services {
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+.img_service {
+    border-radius: 5px;
+    border: 1px solid #490505;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+.service_description {
+    display: flex;
+    margin-top: 1rem;
+    background-color: #530707ad;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .items_services {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .item_service,
+    .service_description,
+    .img_service {
+        width: 100%;
+    }
+}

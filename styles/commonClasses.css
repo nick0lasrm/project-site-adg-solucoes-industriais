@@ -1,0 +1,49 @@
+/* Padding */
+.py-10p {padding: 10% 0;}
+.py-5p {padding: 5% 0;}
+.pb-5p {padding-bottom: 5%;}
+
+
+/* Margin */
+
+
+/* Color */
+.c-red1 {color: #c50808;}
+.c-red2 {color: #a11010;}
+.c-red3 {color: #e00909a1;}
+.c-white1 {color: #d4d4d4;}
+.c-white2 {color: #dbdbdb;}
+
+
+/* Flex */
+.flj-center{
+    display: flex;
+    justify-content: center;
+}
+.fl-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gap */
+.gap-5r {gap: 5rem;}
+
+
+/* Font Weight */
+.fw8 {font-weight: 800;}
+.fw7 {font-weight: 700;}
+
+
+/* Font Size */
+.fsl {font-size: large;}
+.fs3 {font-size: 3rem;} 
+.fs-smr {font-size: smaller;}
+
+
+/* Width */
+.w-20p {width: 20%;}
+.w-80p {width: 80%;}
+
+/* Border color */
+.bd-red {border: 1px solid #830a0a79;}
+.bd-red1 {border: 1px solid #c40808;}

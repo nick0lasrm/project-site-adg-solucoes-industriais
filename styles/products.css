@@ -1,0 +1,48 @@
+.item_product {
+     width: 20%;
+ }
+
+ .item_product_single {
+     width: 80%;
+ }
+
+ .imgs_product {
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+ }
+
+ .img_hover:hover {
+     transition: all .3s linear;
+     opacity: 1;
+ }
+
+ .img_hover {
+     position: absolute;
+     inset: 0 0 0 0;
+     opacity: 0;
+ }
+
+
+ @media screen and (max-width: 1024px) {
+     .item_product {
+         width: 25%;
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+     .item_product {
+         width: 40%;
+     }
+
+     .item_product_single {
+         width: 95%;
+     }
+
+ }
+
+ @media screen and (max-width: 575px) {
+    .item_product_single img {
+        height: 200px;
+    }
+ }

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    scroll-behavior: smooth;
+}
+
+body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(0deg, #55030383, #771616f3, #5503038f);
+    border-radius: 10px;
+}
+
+
+/* Button Saiba Mais */
+
+.style_button {
+    transition: all .10s ease-in-out;
+    align-items: center;
+    
+    border: 1px solid #0000006c;
+
+    font-size: 1.5rem;
+    background-color: #7e1717;
+    color: #adadad;
+}
+
+.btn_hero_section,
+.btn_service_section {
+    height: 4.5rem;
+    padding: 0 1.6rem;
+}
+
+.btn_product_section {
+    width: 100%;
+    height: 3rem;
+    margin-top: auto;
+    font-size: 100%;
+}
+
+.style_button:hover {
+    background-color: #af1515;
+    color: #c9c9c9;
+    transform: scale(.95);
+    transition: all .3s ease;
+}
+
+
+/*  Background Sections  */
+
+.background {
+    background-image: linear-gradient(0deg, #000000ad, #44030369, #000000ad), url(../imgs-icons/backgroundImages/backgroundimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*  Contact Button  */
+
+.contact_icon {
+    min-width: 55px;
+    background-color: #12d312;
+    border-radius: 50%;
+    position: fixed;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    opacity: 80%;
+}
+
+.contact_icon:hover {
+    transform: scale(1.1);
+    background-color: #1da51d;
+    transition: all .3s ease;
+}
+
+/*  Button Back To Top  */
+
+.back_top {
+    color: #f5f5f5;
+    min-width: 40px;
+    position: fixed;
+    right: 1.4rem;
+    bottom: 6rem;
+
+    display: none;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 100;
+}
+
+.back_top:hover {
+    color: #e70000;
+    transition: all .3s ease;
+}
+
+.back_top.active {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+
+@media screen and (max-width: 991px) {
+    .back_top {
+        display: block;
+    }
+}
