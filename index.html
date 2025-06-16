@@ -9,12 +9,6 @@
     <title>ADG - Soluções Industriais</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/commonClasses.css">
-    <link rel="stylesheet" href="styles/headerNavbar.css">
-    <link rel="stylesheet" href="styles/heroSection.css">
-    <link rel="stylesheet" href="styles/aboutUs.css">
-    <link rel="stylesheet" href="styles/services.css">
-    <link rel="stylesheet" href="styles/products.css">
-    <link rel="stylesheet" href="styles/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
@@ -22,19 +16,18 @@
 <body>
 
     <!--HEADER/NAVBAR-->
-    <a id="top"></a>
     <header class="header_style">
         <nav class="navbar container d-flex align-items-center py-1 px-2">
             <div class="me-auto">
                 <img width="170" src="imgs-icons/logo_ADG-no-background.png" alt="logo_ADG">
             </div>
-            <ul class="navbar_links">
-                <li><a class="nav_link c-red1" href="#">INÍCIO</a></li>
-                <li><a class="nav_link c-red1" href="#sobre">SOBRE</a></li>
-                <li><a class="nav_link c-red1" href="#servicos">SERVIÇOS</a></li>
-                <li><a class="nav_link c-red1" href="#produtos">PRODUTOS</a></li>
+            <ul class="m-0 p-0 navbar_links">
+                <li><a class="nav_link txtd-none c-red1" href="#">INÍCIO</a></li>
+                <li><a class="nav_link txtd-none c-red1" href="#sobre">SOBRE</a></li>
+                <li><a class="nav_link txtd-none c-red1" href="#servicos">SERVIÇOS</a></li>
+                <li><a class="nav_link txtd-none c-red1" href="#produtos">PRODUTOS</a></li>
                 <li>
-                    <a class="nav_link c-red1"
+                    <a class="nav_link txtd-none c-red1"
                         href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+serviços.+ "
                         target="_blank" rel="noopener noreferrer external">CONTATO</a>
                 </li>
@@ -51,19 +44,19 @@
 
 
     <!-- MOBILE MENU -->
-    <div id="mobile_menu" class="mobile_menu_view d-lg-none">
+    <div id="mobile_menu" class="d-lg-none position-absolute w-100 py-4 px-3 rounded-bottom mobile_menu_view">
         <nav>
-            <ul class="d-flex flex-column align-items-end gap-3 px-4">
-                <li><a class="nav_link c-red1" onclick="closemenu()" href="#">INÍCIO</a></li>
+            <ul class="m-0 p-0 d-flex flex-column align-items-end gap-3 px-4">
+                <li><a class="nav_link txtd-none c-red1" onclick="closemenu()" href="#">INÍCIO</a></li>
                 <hr class="m-0 w-100 c-red3">
-                <li><a class="nav_link c-red1" href="#sobre">SOBRE</a></li>
+                <li><a class="nav_link txtd-none c-red1" href="#sobre">SOBRE</a></li>
                 <hr class="m-0 w-100 c-red3">
-                <li><a class="nav_link c-red1" href="#servicos">SERVIÇOS</a></li>
+                <li><a class="nav_link txtd-none c-red1" href="#servicos">SERVIÇOS</a></li>
                 <hr class="m-0 w-100 c-red3">
-                <li><a class="nav_link c-red1" href="#produtos">PRODUTOS</a></li>
+                <li><a class="nav_link txtd-none c-red1" href="#produtos">PRODUTOS</a></li>
                 <hr class="m-0 w-100 c-red3">
                 <li>
-                    <a class="nav_link c-red1"
+                    <a class="nav_link txtd-none c-red1"
                         href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+serviços.+ "
                         target="_blank" rel="noopener noreferrer external">CONTATO</a>
                 </li>
@@ -75,17 +68,17 @@
     <main>
         <!-----HERO-SECTION----->
         <section class="background">
-            <div class="py-10p d-flex flex-column text-center">
+            <div class="py-10p d-flex flex-column text-center gap-5r">
                 <div class="container text-center">
-                    <h1 class="title-hero-section m-auto mb-4 mb-md-5">SOLUÇÕES INDUSTRIAIS</h1>
-                    <h2 class="subtitle-hero-section">A ADG LTDA oferece soluções para a Industria, fornecendo
+                    <h1 class="display-1 fw-bold c-grey1 m-auto mb-4 mb-md-5">SOLUÇÕES INDUSTRIAIS</h1>
+                    <h2 class="display-6 fw-semibold c-grey fs-3 lt-s2">A ADG LTDA oferece soluções para a Industria, fornecendo
                         tecnologia e inovação para otimizar
                         seus
                         processos Industriais, aumentar a produtividade e reduzir custos operacionais.</h2>
                 </div>
-                <a class="style_button btn_hero_section flj-center text-center align-self-center fw8 rounded"
-                    href="#servicos">NOSSOS
-                    SERVIÇOS</a>
+                <a class="btn-hover txtd-none c-grey fs-4 bg-red1 align-items-center h-5r px-4 mb-5r mb-lg-0 flj-center align-self-center fw8 rounded"
+                    href="#servicos">NOSSOS SERVIÇOS
+                </a>
             </div>
         </section>
 
@@ -94,18 +87,20 @@
         <section id="sobre" class="background">
 
             <div class="flj-center w-100 py-5p text-center">
-                <h2 class="fs3 c-red2 fw8">SOBRE NÓS</h2>
+                <h2 class="fs2r c-red2 fw8">SOBRE NÓS</h2>
             </div>
 
-            <div class="container about_section_wrapper">
+            <div class="container fl-col gap-5">
 
                 <div class="d-flex flex-column-reverse flex-md-row align-items-center">
-                    <h2 class="c-white2 fw8 m-0 mt-4 me-md-auto mt-md-0 ">ADG SOLUÇÕES INDUSTRIAIS LTDA</h2>
+                    <h2 class="c-white2 fw8 fs-3 m-0 mt-4 me-md-auto mt-md-0 text-center text-md-start">ADG SOLUÇÕES
+                        INDUSTRIAIS LTDA</h2>
                     <img class="me-lg-5" width="250" height="150" src="imgs-icons/logo_ADG-no-background.png"
                         alt="logo_ADG">
                 </div>
-                <div class="text_section_about">
-                    <p class="m-0 c-white1">Fundada em 2022, a <b>ADG Soluções Industriais Ltda</b> atua
+                <div class="lh-lg fs-5 pb-5 lt-s1">
+                    <p class="m-0 c-white1 text-center text-md-start">Fundada em 2022, a <b>ADG Soluções Industriais
+                            Ltda</b> atua
                         oferecendo <b>peças de reposição
                             para
                             máquinas de corte a laser</b> e serviços de <b>manutenção preventiva e preditiva em
@@ -165,7 +160,7 @@
 
 
             <div class="flj-center w-100 py-5p text-center">
-                <h2 class="fs3 c-red2 fw8">NOSSOS SERVIÇOS</h2>
+                <h2 class="fs2r c-red2 fw8">NOSSOS SERVIÇOS</h2>
             </div>
 
             <!----SERVICE-1---->
@@ -173,9 +168,11 @@
                 <h2 class="c-white2 fw8 text-center">Plano de Manutenção Preventiva e Preditiva</h2>
                 <div class="d-flex flex-column flex-md-row gap-5">
                     <div class="w-100 fl-col">
-                        <img class="img_service" src="imgs-icons/services/plano_manutencao.png" alt="Manutenção">
+                        <img class="rounded bd-red2 w-100 mb-3" src="imgs-icons/services/plano_manutencao.png"
+                            alt="Manutenção">
                         <div>
-                            <p class="m-0 c-white1">Nosso plano de manutenção visa garantir a máxima
+                            <p class="m-0 c-white1 text-center text-md-start">Nosso plano de manutenção visa garantir a
+                                máxima
                                 eficiência, segurança
                                 operacional e prolongar a vida útil dos equipamentos industriais. Através da
                                 execução sistemática de atividades preventivas e preditivas, minimizamos
@@ -190,22 +187,22 @@
                         <h2 class="c-white2 fw8">Benefícios da Manutenção
                             Preventiva/Preditiva</h2>
                         <div>
-                            <h1 class="c-white2 fw8">90%</h1>
+                            <p class="display-5 fw-bold c-white2 m-0">90%</p>
                             <h5 class="c-white2 fw7 my-2">Redução de paradas</h5>
                             <p class="m-0 c-white1">Diminuição significativa de interrupções não programadas</p>
                         </div>
                         <div>
-                            <h1 class="c-white2 fw8">60%</h1>
+                            <p class="display-5 fw-bold c-white2 m-0">60%</p>
                             <h5 class="c-white2 fw7 my-2">Aumento da Vida Útil</h5>
                             <p class="m-0 c-white1">Prolongamento da durabilidade dos equipamentos</p>
                         </div>
                         <div>
-                            <h1 class="c-white2 fw8">40%</h1>
+                            <p class="display-5 fw-bold c-white2 m-0">40%</p>
                             <h5 class="c-white2 fw7 my-2">Redução de Custos</h5>
                             <p class="m-0 c-white1">Otimização do custo total de manutenção</p>
                         </div>
                         <div>
-                            <h1 class="c-white2 fw8">30%</h1>
+                            <p class="display-5 fw-bold c-white2 m-0">30%</p>
                             <h5 class="c-white2 fw7 my-2">Eficiência Energética</h5>
                             <p class="m-0 c-white1">Melhoria no consumo de energia</p>
                         </div>
@@ -215,9 +212,10 @@
                 <!----SERVICE---->
                 <div class="d-flex flex-column flex-md-row gap-5r">
                     <div class="w-100 fl-col">
-                        <img class="img_service" src="imgs-icons/services/Lubrificação.png" alt="Manutenção">
+                        <img class="rounded bd-red2 w-100 mb-3" src="imgs-icons/services/Lubrificação.png"
+                            alt="Manutenção">
                         <h3 class="c-white2 fw8 text-center">Lubrificação de Componentes Mecânicos</h3>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Aplicação de
@@ -232,7 +230,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Redução de Atrito
@@ -246,7 +244,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Frequência Programada
@@ -259,9 +257,10 @@
                         </div>
                     </div>
                     <div class="w-100 fl-col">
-                        <img class="img_service" src="imgs-icons/services/SistemaExaustao.png" alt="Manutenção">
+                        <img class="rounded bd-red2 w-100 mb-3" src="imgs-icons/services/SistemaExaustao.png"
+                            alt="Manutenção">
                         <h3 class="c-white2 fw8 text-center">Sistema de Exaustão e Ar Comprimido</h3>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Verificação dos
@@ -277,7 +276,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Troca dos Filtros do
@@ -293,7 +292,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Manutenção do Compressor
@@ -312,9 +311,10 @@
                 <!----SERVICE---->
                 <div class="d-flex flex-column flex-md-row gap-5r">
                     <div class="w-100 fl-col">
-                        <img class="img_service" src="imgs-icons/services/limpeza_geral_maquina.png" alt="Manutenção">
+                        <img class="rounded bd-red2 w-100 mb-3" src="imgs-icons/services/limpeza_geral_maquina.png"
+                            alt="Manutenção">
                         <h3 class="c-white2 fw8 text-center">Limpeza Geral da Máquina</h3>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Remoção de Resíduos
@@ -325,7 +325,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Aspiração de Poeira
@@ -336,7 +336,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Limpeza Técnica
@@ -347,7 +347,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Inspeção Final
@@ -362,10 +362,11 @@
 
                     <!----SERVICE---->
                     <div class="w-100 fl-col">
-                        <img class="img_service" src="imgs-icons/services/painel_eletrico.png" alt="Manutenção">
+                        <img class="rounded bd-red2 w-100 mb-3" src="imgs-icons/services/painel_eletrico.png"
+                            alt="Manutenção">
                         <h3 class="c-white2 fw8 text-center">Verificação de
                             Componentes Elétricos</h3>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Inspeção do Painel Elétrico
@@ -376,7 +377,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Verificação do CNC
@@ -387,7 +388,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Inspeção da Lagarta
@@ -404,10 +405,10 @@
                 <!----SERVICE---->
                 <div class="d-flex flex-column flex-md-row gap-5r">
                     <div class="w-100 fl-col">
-                        <img class="img_service" src="imgs-icons/services/manutencao-de-chiller-01.png"
+                        <img class="rounded bd-red2 w-100 mb-3" src="imgs-icons/services/manutencao-de-chiller-01.png"
                             alt="Manutenção">
                         <h3 class="c-white2 fw8 text-center">Sistema de Refrigeração (Chiller)</h3>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Limpeza dos Filtros
@@ -420,7 +421,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Avaliação da Qualidade da Água
@@ -437,9 +438,9 @@
 
                     <!----SERVICE---->
                     <div class="w-100 fl-col">
-                        <img class="img_service" src="imgs-icons/services/suporte.png" alt="Manutenção">
+                        <img class="rounded bd-red2 w-100 mb-3" src="imgs-icons/services/suporte.png" alt="Manutenção">
                         <h3 class="c-white2 fw8 text-center">Atendimento de Dúvidas Operacionais</h3>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Suporte Técnico Especializado
@@ -449,7 +450,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Orientação Operacional
@@ -459,7 +460,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="service_description">
+                        <div class="d-flex rounded w-100 p-3 mt-3 bg-red0">
                             <div>
                                 <h4 class="c-white2 fw8">
                                     Auxílio em Pequenas Intervenções
@@ -471,7 +472,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="style_button btn_service_section flj-center text-center align-self-center fw8 rounded"
+                <a class="btn-hover txtd-none c-grey fs-4 bg-red1 align-items-center h-5r px-3 flj-center text-center align-self-center fw8 rounded"
                     href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+saber+mais+sobre+o+plano+de+manutenção+preventiva+e+preditiva+de+vocês.+"
                     target="_blank" rel="noopener noreferrer external">SAIBA MAIS SOBRE NOSSO PLANO</a>
             </div>
@@ -484,7 +485,7 @@
 
 
             <div class="flj-center w-100 py-5p text-center">
-                <h2 class="fs3 c-red2 fw8">PRODUTOS</h2>
+                <h2 class="fs2r c-red2 fw8">PRODUTOS</h2>
             </div>
 
 
@@ -494,91 +495,91 @@
                 <div class="flj-center flex-wrap gap-4">
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/kt_b2/kt-b2.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt_b2/kt-b2_pic2.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">KT-B2</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/kt_x/kt-x.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt_x/kt-x_pic2.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">KT-X</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/kt_kn/kt-kn.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt_kn/kt-kn_pic2.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">KT-KN</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/kt_ks/kt-ks.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt_ks/kt-ks_pic2.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">KT-KS</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/kt_xb/kt-xb.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt_xb/kt-xb_pic2.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">KT-XB</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/4131m11/4131m11.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/ceramics/4131m11/4131m11_pic2.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">4131M11</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/fc_40/fc-40.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
@@ -586,14 +587,14 @@
                         </div>
                         <h5 class="c-white2 fw7 my-2">FC-40</h5>
                         <p class="m-0 c-white1">Para máquinas de tubo</p>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/ceramics/wtc-04/wtc-04_pic0.png"
                                 alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
@@ -601,7 +602,7 @@
                         </div>
                         <h5 class="c-white2 fw7 my-2">WTC-04</h5>
                         <p class="m-0 c-white1">Para máquinas de tubo</p>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -617,8 +618,8 @@
                 <div class="container d-flex flex-wrap justify-content-center gap-4">
 
                     <div
-                        class="d-flex flex-column text-center bg-black bg-opacity-50 item_product_single bd-red rounded">
-                        <div class="imgs_product">
+                        class="d-flex flex-column text-center bg-black bg-opacity-50 item_product_large bd-red rounded">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100" src="imgs-icons/products/bicos_corte/all_pic0.png"
                                 alt="...">
                         </div>
@@ -628,7 +629,7 @@
                             E, C,
                             entre outros. Também temos bicos 3D para máquinas de corte de tubo e bicos
                             compatíveis com equipamentos Bystronic.</p>
-                        <a class=" style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -644,8 +645,8 @@
                 <div class="container d-flex flex-wrap justify-content-center gap-4">
 
                     <div
-                        class="d-flex flex-column text-center bg-black bg-opacity-50 item_product_single bd-red rounded">
-                        <div class="imgs_product">
+                        class="d-flex flex-column text-center bg-black bg-opacity-50 item_product_large bd-red rounded">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/consumiveis_para_tochas_plasma/consumiveis_tocha_plasma_pic0.png"
                                 alt="...">
@@ -653,7 +654,7 @@
                         <p class="my-3 c-white1">Trabalhamos com bicos, bocais, capas de retenção e eletrodos de
                             plasma, garantindo qualidade
                             e compatibilidade com diversos modelos de tocha plasma.</p>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -668,7 +669,7 @@
                 <div class="container d-flex flex-wrap justify-content-center gap-4">
 
                     <div
-                        class="d-flex flex-column text-center bg-black bg-opacity-50 item_product_single bd-red rounded">
+                        class="d-flex flex-column text-center bg-black bg-opacity-50 item_product_large bd-red rounded">
                         <div id="lentes_e_protetores" class="carousel slide">
                             <div class="carousel-inner rounded bd-red1" style="position: relative;">
                                 <div class="carousel-item active">
@@ -694,7 +695,7 @@
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
                                 <h5 class="c-white2 fw7 my-2">Lentes</h5>
-                                <ul class="d-grid gap-2 justify-content-around c-white2 text-start py-1 px-3">
+                                <ul class="m-0 p-0 d-grid gap-2 justify-content-around c-white2 text-start py-1 px-3">
                                     <li>Lentes óticas, para cabeçotes precitec, han's laser,
                                         salvagnini, bystronic e outros;</li>
                                     <li>Lente focal, para cabeçotes precitec, han's laser,
@@ -707,7 +708,7 @@
                             <div class="col-md-6 col-sm-12">
                                 <h5 class="c-white2 fw7 my-2 mt-4 mt-md-2">Protetor para lentes</h5>
                                 <div class="d-flex">
-                                    <ul class="w-100 c-white2 text-start py-1 px-3">
+                                    <ul class="m-0 p-0 w-100 c-white2 text-start py-1 px-3">
                                         <li>18*2</li>
                                         <li>20*3</li>
                                         <li>22.4*4.1</li>
@@ -719,7 +720,7 @@
                                         <li>30*5</li>
                                         <li>37*7 12KW</li>
                                     </ul>
-                                    <ul class="w-100 c-white2 text-start py-1 px-3">
+                                    <ul class="m-0 p-0 w-100 c-white2 text-start py-1 px-3">
                                         <li>37*7 15KW</li>
                                         <li>37*7 20KW</li>
                                         <li>37*1.6 12KW</li>
@@ -734,7 +735,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -750,7 +751,7 @@
                 <div class="d-flex flex-wrap justify-content-center gap-4">
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/filtros/filtros_para_secador/filtro_secador0.png" alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
@@ -758,7 +759,7 @@
                         </div>
                         <h5 class="c-white2 fw7 my-2">Filtros para Secador</h5>
                         <p class="m-0 c-white1">020-AC, 020-GP e 020-HE</p>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -801,7 +802,7 @@
                         </div>
                         <h5 class="c-white2 fw7 my-2">Filtros de Ar</h5>
                         <p class="m-0 c-white1">Exaustores Donaldson / Topssin</p>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -835,14 +836,14 @@
                             </button>
                         </div>
                         <h5 class="c-white2 fw7 my-2">Elementos Parker</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/filtros/filtros_de_oleo/filtro_de_oleo_schulz_pic0.png"
                                 alt="...">
@@ -851,14 +852,14 @@
                                 alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">Filtros de Oléo</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/filtros/separador_de_elementos/separador_de_elementos_pic0.png"
                                 alt="...">
@@ -867,7 +868,7 @@
                                 alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">Sepador de Elementos</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -923,7 +924,7 @@
                             </button>
                         </div>
                         <h5 class="c-white2 fw7 my-2">Álcool Isopropílico 99,8%</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -957,48 +958,48 @@
                             </button>
                         </div>
                         <h5 class="c-white2 fw7 my-2">Removedor de Pó</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/limpeza/escova_de_aco/escova_de_aco.png" alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/limpeza/escova_de_aco/escova_de_aco_pic1.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">Escova de Aço</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/limpeza/spray_solvente/spray_solvente_ipa.png" alt="...">
                             <!-- <img class="rounded bd-red1 w-100 img_hover" src="" alt="..."> -->
                         </div>
                         <h5 class="c-white2 fw7 my-2">Spray Solvente</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/limpeza/cotonete/cotonete_plotter.png" alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/limpeza/cotonete/cotonete_plotter_pic1.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">Cotonetes</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -1015,7 +1016,7 @@
                 <div class="container d-flex flex-wrap justify-content-center gap-4">
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/pecas_e_cabecotes/aneis_vedacao_cabecote/aneis_vedacao_cabecote_pic0.png"
                                 alt="...">
@@ -1024,7 +1025,7 @@
                                 alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">Aneis de Vedação para Cabeçote</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -1058,7 +1059,7 @@
                             </button>
                         </div>
                         <h5 class="c-white2 fw7 my-2">Sensores para Cabeçote</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -1097,7 +1098,7 @@
                         </div>
                         <h5 class="c-white2 fw7 my-2">Cabeçotes</h5>
                         <p class="m-0 c-white1">Precitec, RayTools, Bodor, entre outras marcas.</p>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -1145,7 +1146,7 @@
                             </button>
                         </div>
                         <h5 class="c-white2 fw7 my-2">Capacitivos</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -1183,7 +1184,7 @@
                             </button>
                         </div>
                         <h5 class="c-white2 fw7 my-2">Indutivos</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -1237,27 +1238,27 @@
                             </button>
                         </div>
                         <h5 class="c-white2 fw7 my-2">Patins</h5>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
                     </div>
 
                     <div class="d-flex flex-column text-center bg-black bg-opacity-50 item_product bd-red rounded">
-                        <div class="imgs_product">
+                        <div class="position-relative overflow-hidden">
                             <img class="rounded bd-red1 w-100"
                                 src="imgs-icons/products/diversos/oleo_e_graxa/oleo_clp-46.png" alt="...">
                             <img class="rounded bd-red1 w-100 img_hover"
                                 src="imgs-icons/products/diversos/oleo_e_graxa/graxa_castanha_mp2.png" alt="...">
                         </div>
                         <h5 class="c-white2 fw7 my-2">Oléo e graxa</h5>
-                        <ul class="c-white2 text-start py-1 px-3">
+                        <ul class="m-0 p-0 c-white2 text-start py-1 px-3">
                             <li>Oléo de barramento</li>
                             <li>Graxa de rolamentos</li>
                             <li>Oléo Linear</li>
                             <li>Graxa de barramento</li>
                         </ul>
-                        <a class="style_button btn_product_section flj-center text-center align-self-center fw8 rounded-bottom"
+                        <a class="btn-hover txtd-none c-grey align-items-center w-100 h-3r mt-auto fs-100p bg-red1 flj-center text-center fw8 rounded-bottom"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external">SAIBA
                             MAIS</a>
@@ -1272,52 +1273,49 @@
         </section>
     </main>
 
-    <footer class="style_footer">
+    <footer class="py-3 bdt-grey bg-black">
         <div class="container d-flex flex-column">
-            <div class="child_footer">
-                <img class="logo_style_footer" src="imgs-icons/logo_ADG-no-background.png" alt="logo_ADG">
-
-                <p class="mb-3">Rua Antonio Bravo Plaça, 320 - Ipatinga - Sorocaba/SP</p>
-                <p class="mb-3">vendas@adgsolucoesindustriais.com.br</p>
-                <p class="mb-3">+55 15 99677-1241</p>
-                <div class="links_style">
-                    <a href="https://www.instagram.com/adgsolucoesindustriais?igsh=ZmNiNGM3OWY4Zm1r">
-                        <div class="icon_link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
-                        </div>
-                    </a>
-                    <a href="mailto:vendas@adgsolucoesindustriais.com.br">
-                        <div class="icon_link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-envelope" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+            <img src="imgs-icons/logo_ADG-no-background.png" width="120" alt="logo_ADG">
+            <p class="mb-3 c-grey">Rua Antonio Bravo Plaça, 320 - Ipatinga - Sorocaba/SP</p>
+            <p class="mb-3 c-grey">vendas@adgsolucoesindustriais.com.br</p>
+            <p class="mb-3 c-grey">+55 15 99677-1241</p>
+            <div class="d-flex gap-3">
+                <a class="c-grey" href="https://www.instagram.com/adgsolucoesindustriais?igsh=ZmNiNGM3OWY4Zm1r">
+                    <div class="icon_link rounded-4 bg-red2 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </div>
+                </a>
+                <a class="c-grey" href="mailto:vendas@adgsolucoesindustriais.com.br">
+                    <div class="icon_link rounded-4 bg-red2 p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
-        <hr class="my-4">
+        <hr class="my-4 text-secondary">
         <div class="text-center">
-            <p style="font-size: smaller;">© 2025 ADG Soluções Industriais | Todos os direitos reservados.</p>
+            <p class="c-grey fs-smr">© 2025 ADG Soluções Industriais | Todos os direitos reservados.</p>
         </div>
 
     </footer>
 
     <!----CONTACT-BUTTON----->
-    <div class="contact_icon" title="Mande uma mensagem!">
+    <div class="position-fixed contact_icon" title="Mande uma mensagem!">
         <a href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+serviços.+ "
             target="_blank" rel="noopener noreferrer external"><img class="p-1" src="imgs-icons/icons8-whatsapp.svg"
                 alt="icon_whatsapp" width="55" height="55"></a>
     </div>
 
     <!----BACK-TO-TOP-BUTTON---->
-    <a href="#top" class="back_top">
+    <a href="#top" class="d-block d-lg-none position-fixed back_top">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"

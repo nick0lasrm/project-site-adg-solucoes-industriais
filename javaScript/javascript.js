@@ -19,11 +19,12 @@ function closemenu() {
 
 window.addEventListener('scroll', function () {
     let back_top = document.querySelector('.back_top')
-    back_top.classList.toggle('active', window.scrollY > 700)
+    back_top.classList.toggle('active', window.scrollY > 600)
 
     if (window.scrollY > 400) {
         mobile_menu.classList.remove('expand_menu');
         btn.classList.remove('ativar');
     }
 })
+
 

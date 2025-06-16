@@ -5,6 +5,8 @@
 
 
 /* Margin */
+.mb-5r {margin-bottom: 5rem;}
+.mb-4r {margin-bottom: 4rem;}
 
 
 /* Color */
@@ -13,6 +15,8 @@
 .c-red3 {color: #e00909a1;}
 .c-white1 {color: #d4d4d4;}
 .c-white2 {color: #dbdbdb;}
+.c-grey {color: #adadad;}
+.c-grey1 {color: #818181a8}
 
 
 /* Flex */
@@ -30,20 +34,41 @@
 
 
 /* Font Weight */
+.fw9 {font-weight: 900;}
 .fw8 {font-weight: 800;}
 .fw7 {font-weight: 700;}
 
 
 /* Font Size */
 .fsl {font-size: large;}
-.fs3 {font-size: 3rem;} 
+.fs2r {font-size: 2.5rem;} 
 .fs-smr {font-size: smaller;}
+.fs-100p {font-size: 100%;}
 
 
 /* Width */
 .w-20p {width: 20%;}
 .w-80p {width: 80%;}
 
-/* Border color */
+/* Height */
+.h-3r {height: 3rem;}
+.h-5r {height: 5rem;}
+
+
+/* Border Color */
 .bd-red {border: 1px solid #830a0a79;}
 .bd-red1 {border: 1px solid #c40808;}
+.bd-red2 {border: 1px solid #490505;}
+.bdt-grey {border-top: 1px solid #ffffff1a;}
+
+/* Background Color */
+.bg-red0 {background-color: #530707ad;}
+.bg-red1 {background-color: #7e1717;}
+.bg-red2 {background-color: #490505;}
+
+/* Text Decoration */
+.txtd-none {text-decoration: none;}
+
+/* Letter Spacing */
+.lt-s1 {letter-spacing: 1px;}
+.lt-s2 {letter-spacing: 2px;}
