@@ -142,18 +142,6 @@ button.ativar .linha_btn:nth-child(2) {
     transition: all .2s ease-in-out;
 }
 
-
-/* Hero Section */
-
-.subtitle-hero-section {
-    font-weight: 700;
-    color: #a7a7a7;
-    font-size: 2rem;
-    margin-bottom: 7%;
-    letter-spacing: 1.2px;
-}
-
-
 /* Products */
 
 .item_product {
