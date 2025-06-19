@@ -18,6 +18,15 @@ body * {
     border-radius: 10px;
 }
 
+textarea.form-control {
+    resize: none;
+}
+
+.form-control:focus {
+    border-color: #771616f3;
+    box-shadow: 0 1px 15px 3px #771616f3;
+}
+
 /* Button Saiba Mais Hover */
 
 .btn-hover:hover {
