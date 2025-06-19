@@ -6,9 +6,11 @@
 .px-2r {padding: 0 2rem;}
 .ps-2r {padding-left: 2rem;}
 
+
 /* Margin */
 .mb-5r {margin-bottom: 5rem;}
 .mb-4r {margin-bottom: 4rem;}
+
 
 /* Color */
 .c-red1 {color: #c50808;}
@@ -20,19 +22,10 @@
 .c-grey1 {color: #818181a8}
 
 
-/* Flex */
-.flj-center{
-    display: flex;
-    justify-content: center;
-}
-.fl-col {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Gap */
 .gap-6r {gap: 6rem;}
 .gap-5r {gap: 5rem;}
+
 
 /* Font Weight */
 .fw9 {font-weight: 900;}
@@ -51,23 +44,29 @@
 .w-20p {width: 20%;}
 .w-80p {width: 80%;}
 
+
 /* Height */
 .h-3r {height: 3rem;}
 .h-5r {height: 5rem;}
+
 
 /* Border Color */
 .bd-red {border: 1px solid #830a0a79;}
 .bd-red1 {border: 1px solid #c40808;}
 .bd-red2 {border: 1px solid #490505;}
 .bdt-grey {border-top: 1px solid #ffffff1a;}
+.bdb-red {border-bottom: 1px solid #e009091a;}
+
 
 /* Background Color */
 .bg-red0 {background-color: #530707ad;}
 .bg-red1 {background-color: #7e1717;}
 .bg-red2 {background-color: #490505;}
 
+
 /* Text Decoration */
 .txtd-none {text-decoration: none;}
+
 
 /* Letter Spacing */
 .lt-s1 {letter-spacing: 1px;}
