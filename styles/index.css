@@ -76,6 +76,7 @@ textarea.form-control {
 }
 
 .back_top:hover {
+    scale: 1.1;
     color: #e70000;
 
 }
@@ -87,12 +88,9 @@ textarea.form-control {
 
 /* Header Navbar */
 
-.header_style {
-    background-color: #000000;
-    box-shadow: 0px 7px 9px -6px rgba(0, 0, 0, .3);
+.header-position {
+    box-shadow: 5px 7px 10px -6px rgb(0, 0, 0);
     position: sticky;
-    z-index: 100;
-    top: 0;
 }
 
 .nav_link {
@@ -116,7 +114,6 @@ textarea.form-control {
 }
 
 .linha_btn {
-    display: none;
     width: 28px;
     height: 3px;
     background-color: #ce0404;
@@ -162,11 +159,7 @@ button.ativar .linha_btn:nth-child(2) {
 }
 
 .item_product_medium {
-    width: 45%;
-}
-
-.img_hover:hover {
-    opacity: 1;
+    width: 44%;
 }
 
 .img_hover {
@@ -174,6 +167,10 @@ button.ativar .linha_btn:nth-child(2) {
     inset: 0 0 0 0;
     opacity: 0;
     transition: all .4s ease;
+}
+
+.img_hover:hover {
+    opacity: 1;
 }
 
 
@@ -203,14 +200,10 @@ button.ativar .linha_btn:nth-child(2) {
 @media screen and (max-width: 991px) {
 
     /* Header Navbar */
-    .linha_btn {
-        display: block;
-    }
-
-    .header_style {
+    .header-position {
         position: relative;
         box-shadow: none;
-        border-bottom: 2px solid #f00;
+        border-bottom: 1px solid #f00;
     }
 }
 
