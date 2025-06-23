@@ -1,8 +1,6 @@
 /* Padding */
 .py-10p {padding: 10% 0;}
-.py-5p {padding: 5% 0;}
-.py-7r {padding: 7rem 0 1.5rem;}
-.pb-5p {padding-bottom: 5%;}
+.py-8r {padding: 8rem 10px;}
 .px-2r {padding: 0 2rem;}
 .ps-2r {padding-left: 2rem;}
 
@@ -15,34 +13,26 @@
 /* Color */
 .c-red1 {color: #c50808;}
 .c-red2 {color: #a11010;}
-.c-red3 {color: #e00909a1;}
 .c-white1 {color: #d4d4d4;}
 .c-white2 {color: #dbdbdb;}
 .c-grey {color: #adadad;}
-.c-grey1 {color: #818181a8}
+.c-grey1 {color: #d8d8d883}
+.c-grey2 {color: #cecece;}
 
 
 /* Gap */
-.gap-6r {gap: 6rem;}
 .gap-5r {gap: 5rem;}
 
 
 /* Font Weight */
-.fw9 {font-weight: 900;}
 .fw8 {font-weight: 800;}
 .fw7 {font-weight: 700;}
 
 
 /* Font Size */
-.fsl {font-size: large;}
 .fs2r {font-size: 2.5rem;} 
 .fs-smr {font-size: smaller;}
 .fs-100p {font-size: 100%;}
-
-
-/* Width */
-.w-20p {width: 20%;}
-.w-80p {width: 80%;}
 
 
 /* Height */
@@ -70,3 +60,6 @@
 /* Letter Spacing */
 .lt-s1 {letter-spacing: 1px;}
 .lt-s4 {letter-spacing: 4px;}
+
+/* Rotate */
+.rotate-15 {transform: rotate(15deg);}
