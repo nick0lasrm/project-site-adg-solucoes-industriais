@@ -42,13 +42,12 @@
 
 /* Border Color */
 .bd-red {border: 1px solid #830a0a79;}
-.bd-red1 {border: 1px solid #c40808;}
-.bd-red2 {border: 1px solid #490505;}
 .bdt-grey {border-top: 1px solid #7474741a;}
 
 
 /* Background Color */
 .bg-red0 {background-color: #530707ad;}
+.bg-red1 {background-color: #7e1717;}
 .bg-red2 {background-color: #490505;}
 
 
