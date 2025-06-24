@@ -183,6 +183,11 @@ button.ativar .linha_btn:nth-child(2) {
 
 /* Products */
 
+#seloPosition {
+    position: absolute;
+    right: 5%;
+}
+
 .img_hover {
     position: absolute;
     inset: 0 0 0 0;
@@ -213,6 +218,13 @@ button.ativar .linha_btn:nth-child(2) {
         position: relative;
         box-shadow: none;
         border-bottom: 1px solid #f00;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #seloPosition {
+        position: relative;
+        right: 0;
     }
 }
 

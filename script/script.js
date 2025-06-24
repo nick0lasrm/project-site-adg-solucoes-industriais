@@ -15,7 +15,7 @@ window.addEventListener('scroll', function () {
     let back_top = document.querySelector('.back_top')
     back_top.classList.toggle('active', window.scrollY > 600)
 
-    // o menu descendo a página (Mobile)
+    // Fecha o menu descendo a página (Mobile)
     if (window.scrollY > 400) {
         mobile_menu.classList.remove('expand_menu');
         btnMenu.classList.remove('ativar');
@@ -37,7 +37,6 @@ async function handleSubmit(event) {
     // 2. Desabilita o botão e atualiza o texto para dar feedback
     btnSubmit.setAttribute('disabled', 'true');
     btnSubmit.textContent = "Enviando...";
-
     // 3. Envia os dados do formulário para o Formspree
     var data = new FormData(event.target);
     fetch(event.target.action, {
