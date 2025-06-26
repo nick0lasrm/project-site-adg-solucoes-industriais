@@ -35,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     send_json_response('error', 'Método não permitido.', 405);
 }
 
-//  Coleta E Validação Dos Dados Do Formulário 
+// ===== COLETA E VALIDAÇÃO DOS DADOS DO FORMULÁRIO =====
+
 $nome = trim($_POST['nome'] ?? '');
 $email = trim($_POST['email'] ?? '');
 $telefone = trim($_POST['telefone'] ?? '');
