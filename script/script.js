@@ -37,7 +37,7 @@ async function handleSubmit(event) {
     // 2. Desabilita o botão e atualiza o texto para dar feedback
     btnSubmit.setAttribute('disabled', 'true');
     btnSubmit.textContent = "Enviando...";
-    // 3. Envia os dados do formulário para o Formspree
+    // 3. Envia os dados do formulário
     var data = new FormData(event.target);
     fetch(event.target.action, {
         method: form.method,
@@ -46,7 +46,7 @@ async function handleSubmit(event) {
             'Accept': 'application/json'
         }
     }).then(response => {
-        // 4. Verifica a resposta do Formspree
+        // 4. Verifica a resposta
         if (response.ok) {
             // Se deu certo: mostra mensagem de sucesso e limpa o formulário
             statusForm.innerHTML = "Mensagem enviada!";
