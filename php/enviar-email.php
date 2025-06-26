@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // ===== VERIFICAÇÃO reCAPTCHA =====
 
 // Coloque aqui a sua Chave Secreta do reCAPTCHA
-/* $recaptcha_secret = '6Lcay20rAAAAADJ1v2IxGnA8V93yZ5ClG3mx_9XF'; 
+/* $recaptcha_secret = ''; 
 $recaptcha_response = $_POST['g-recaptcha-response'];
 
 if (empty($recaptcha_response)) {
