@@ -37,7 +37,7 @@ async function handleSubmit(event) {
     // 2. Desabilita o botão e atualiza o texto para dar feedback
     btnSubmit.setAttribute('disabled', 'true');
     btnSubmit.textContent = "Enviando...";
-    // 3. Envia os dados do formulário
+    // 3. Envia os dados do formulário para o PHP processar
     var data = new FormData(event.target);
     fetch(event.target.action, {
         method: form.method,
@@ -55,7 +55,7 @@ async function handleSubmit(event) {
             // Altera o texto do botão para "Enviado!"
             btnSubmit.textContent = "Enviado!";
         } else {
-            // Se o Formspree retornou um erro (ex: validação falhou)
+            // Se o PHP retornou um erro (ex: validação falhou)
             response.json().then(data => {
                 if (Object.hasOwn(data, 'errors')) {
                     statusForm.innerHTML = data.message;
