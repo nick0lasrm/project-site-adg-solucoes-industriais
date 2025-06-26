@@ -58,7 +58,7 @@ async function handleSubmit(event) {
             // Se o Formspree retornou um erro (ex: validação falhou)
             response.json().then(data => {
                 if (Object.hasOwn(data, 'errors')) {
-                    statusForm.innerHTML = data["errors"].map(error => error["message"]).json(", ");
+                    statusForm.innerHTML = data.message;
                 } else {
                     statusForm.innerHTML = "Ocorreu um erro ao enviar sua mensagem.";
                 }
