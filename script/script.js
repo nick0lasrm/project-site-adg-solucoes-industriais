@@ -87,3 +87,41 @@ async function handleSubmit(event) {
 if (form) {
     form.addEventListener("submit", handleSubmit);
 }
+
+// Lógica Do Contador De Caracteres
+
+// 1. Espera o conteúdo da página carregar completamente
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 2. Seleciona os elementos do contador
+    const mensagemTextarea = document.getElementById('mensagem');
+    const caracteresAtuaisEl = document.getElementById('caracteresAtuais');
+    const caracteresMaximosEl = document.getElementById('caracteresMaximos');
+    const contadorContainer = document.getElementById('contadorContainer');
+
+    // Garante que o código só rode se os elementos existirem na página
+    if (mensagemTextarea && caracteresAtuaisEl && caracteresMaximosEl) {
+
+        // 3. Pega o limite máximo definido no atributo 'maxlength' do HTML
+        const limiteMaximo = mensagemTextarea.getAttribute('maxlength');
+        caracteresMaximosEl.textContent = limiteMaximo; // Atualiza o número máximo na tela
+
+        // 4. Adiciona um "ouvinte" de evento. O evento 'input' dispara a cada letra digitada.
+        mensagemTextarea.addEventListener('input', () => {
+            // Pega a quantidade de caracteres que o usuário já digitou
+            const contagemAtual = mensagemTextarea.value.length;
+
+            // Atualiza o texto do contador com o número atual
+            caracteresAtuaisEl.textContent = contagemAtual;
+
+            // Muda a cor quando se aproxima do limite
+            if (contagemAtual > limiteMaximo * 0.9) { // Se passar de 90% do limite
+                contadorContainer.style.color = '#c21b1b'; // Vermelho
+            } else if (contagemAtual > limiteMaximo * 0.75) { // Se passar de 75%
+                contadorContainer.style.color = '#c06161'; // Laranja
+            } else {
+                contadorContainer.style.color = '#636363'; // Cor cinza padrão
+            }
+        });
+    }
+});
