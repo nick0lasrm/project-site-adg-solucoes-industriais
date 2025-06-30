@@ -19,6 +19,35 @@ body * {
 }
 
 
+/* Form */
+
+.form-control {
+    padding: 10px 10px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.form-control:focus {
+    border-color: #771616f3;
+    box-shadow: 0 1px 15px 3px #771616f3;
+}
+
+form button:hover {
+    background-color: #af1515;
+    color: #c9c9c9;
+    transform: scale(.95);
+    transition: all .5s ease;
+}
+
+form button:disabled {
+    cursor: not-allowed;
+    background-color: #525252;
+    transform: scale(1);
+    color: #adadad;
+}
+
 /* Button Saiba Mais Hover */
 
 .btn-hover:hover {
