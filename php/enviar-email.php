@@ -65,7 +65,7 @@ if (strlen($nome) <= 2){
 }
 
 if (strlen($mensagem) > 3000) {
-    send_json_response('error', 'Sua mensagem excedeu o limite (1000) de caracteres.',400);
+    send_json_response('error', 'Sua mensagem excedeu o limite (3000) de caracteres.',400);
 }
 
 // Validação do formato de telefone
