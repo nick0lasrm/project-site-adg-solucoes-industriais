@@ -80,12 +80,13 @@ $mail = new PHPMailer(true);
 
 try {
     // Configurações Do Servidor SMTP
+    $mail->CharSet    = 'UTF-8';
     $mail->isSMTP();
     $mail->Host       = $_ENV['SMTP_HOST'];
     $mail->SMTPAuth   = true;
     $mail->Username   = $_ENV['SMTP_USER'];
     $mail->Password   = $_ENV['SMTP_PASS'];
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = $_ENV['SMTP_PORT'];                        
     $mail->CharSet    = 'UTF-8';
 
