@@ -170,8 +170,6 @@ button.ativar .linha_btn:nth-child(2) {
 }
 
 .mobile_menu_view {
-    background-color: #000000;
-    background-image: linear-gradient(0deg, #000000 50%, #1a07078a);
     box-shadow: 0 3px 6px #00000062;
     transform: translateY(-150%);
     transition: all .2s ease-in;
