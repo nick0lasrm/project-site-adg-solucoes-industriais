@@ -1,9 +1,10 @@
 /* Padding */
 .py-10p {padding: 10% 0;}
-.py-8r {padding: 8rem 10px;}
+.py-8r {padding: 7rem 10px;}
 .px-2r {padding: 0 2rem;}
 .ps-2r {padding-left: 2rem;}
-
+.pt-7r {padding-top: 7rem;}
+.pb-7r {padding-bottom: 7rem;}
 
 /* Margin */
 .mb-5r {margin-bottom: 5rem;}
@@ -11,11 +12,8 @@
 
 
 /* Color */
-.c-red1 {color: #c50808;}
-.c-red2 {color: #a11010;}
-.c-white1 {color: #d4d4d4;}
-.c-white2 {color: #dbdbdb;}
-.c-grey {color: #adadad;}
+.c-red {color: #c71414;}
+.c-white {color: #dbdbdb;}
 .c-grey1 {color: #d8d8d883}
 .c-grey2 {color: #cecece;}
 
@@ -40,15 +38,18 @@
 .h-5r {height: 5rem;}
 
 
+/* Width */
+.w-22pc {min-width: 22pc;}
+
 /* Border Color */
 .bd-red {border: 1px solid #830a0a79;}
 .bdt-grey {border-top: 1px solid #0e0e0e;}
 
 
 /* Background Color */
-.bg-red0 {background-color: #530707ad;}
-.bg-red1 {background-color: #7e1717;}
-.bg-red2 {background-color: #490505;}
+.bg-red1 {background-color: #530707ad;}
+.bg-red2 {background-color: #af1a1a;}
+.bg-grey {background-color: #050505;}
 
 
 /* Text Decoration */
@@ -58,6 +59,3 @@
 /* Letter Spacing */
 .lt-s1 {letter-spacing: 1px;}
 .lt-s4 {letter-spacing: 4px;}
-
-/* Rotate */
-.rotate-15 {transform: rotate(15deg);}
