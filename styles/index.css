@@ -22,10 +22,13 @@ body * {
 /* Buttons Hover */
 
 .btn-hover:hover {
-    background-color: #c71414;
-    color: #c9c9c9;
-    transform: scale(1.01);
+    background-color: #a81a1a;
+    color: #ffffff;
     transition: all .3s ease;
+}
+
+.btn-animation:hover {
+    transform: scale(1.02);
 }
 
 /*  Background Sections  */
@@ -41,6 +44,7 @@ body * {
     background-image: linear-gradient(0deg, #000000, #000000b4, #000000), url(../imgs-icons/backgroundImages/backgroundimage.webp);
 
 }
+
 .bg-1 {
     background-image: linear-gradient(0deg, #000000, #00000041, #000000), url(../imgs-icons/backgroundImages/backgroundimage1.webp);
 }
@@ -115,11 +119,11 @@ button.ativar .linha_btn:nth-child(2) {
     transition: all .2s ease-in-out;
 }
 
-.menu-items li:hover{
+.menu-items li:hover {
     background-color: #2e2e2e2f;
 }
 
-.menu-items li a{
+.menu-items li a {
     line-height: 120%;
     width: 100%;
     display: inline-block;
@@ -132,7 +136,7 @@ button.ativar .linha_btn:nth-child(2) {
     z-index: -1;
 }
 
-.menu-items-mobile{
+.menu-items-mobile {
     opacity: 0;
     display: none;
     transition-delay: .2s;
@@ -145,12 +149,19 @@ button.ativar .linha_btn:nth-child(2) {
     transition-delay: .2s;
 }
 
-.caret-icon {
+.caret-icon-desktop,
+.caret-icon-mobile {
     transition: all .1s linear;
 }
 
 .rotate-up {
     transform: rotate(180deg);
+}
+
+/* Hero-Section */
+
+.position-hero {
+    top: 30%;
 }
 
 /* Products */
@@ -171,7 +182,6 @@ button.ativar .linha_btn:nth-child(2) {
     opacity: 1;
 }
 
-
 /* Form */
 
 .form-control {
@@ -188,10 +198,10 @@ textarea.form-control {
 }
 
 form button:hover {
-    background-color: #af1515;
-    color: #c9c9c9;
-    transform: scale(.95);
-    transition: all .5s ease;
+    background-color: #a81a1a;
+    color: #ffffff;
+    transform: scale(1.02);
+    transition: all .3s ease;
 }
 
 form button:disabled {
@@ -253,13 +263,25 @@ form button:disabled {
 
 @media screen and (max-width: 991px) {
 
-    .py-8r {padding: 6rem 10px 0;}
-    .pt-7r {padding-top: 6rem;}
-    .pb-7r {padding-bottom: 6rem;}
+    .py-8r {
+        padding: 6rem 10px 2rem;
+    }
+
+    .pt-7r {
+        padding-top: 6rem;
+    }
+
+    .pb-7r {
+        padding-bottom: 6rem;
+    }
 
     /* Header Navbar */
     .header-position {
         border-bottom: 1px solid #f00;
+    }
+
+    .position-hero {
+        top: 25%;
     }
 }
 
@@ -277,5 +299,12 @@ form button:disabled {
 
     .mobile_menu_view {
         width: 280px;
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+    .position-hero {
+        top: 22%;
     }
 }

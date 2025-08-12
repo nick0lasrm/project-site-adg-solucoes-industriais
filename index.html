@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="imgs-icons/logo_ADG-bg-black-favicon.png" sizes="512x512">
+    <link rel="icon" type="image/png" href="logo_ADG-bg-black-favicon-512x512.png">
     <link rel="preload" fetchpriority="high" as="image" href="imgs-icons/backgroundImages/backgroundimage1.webp">
     <link rel="canonical" href="https://adgsolucoesindustriais.com.br/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +12,28 @@
     <meta property="og:title" content="ADG Soluções Industriais | Peças e manutenção para máquinas de corte a laser">
     <meta property="og:description"
         content="Peças, consumíveis e manutenção para máquinas de corte a laser. Otimize seus processos industriais, aumente a produtividade e reduza custos com a ADG. Contato imediato!">
-    <meta property="og:image" content="https://adgsolucoesindustriais.com.br/imgs-icons/logo_ADG-bg-black-og.png">
+    <meta property="og:image"
+        content="https://adgsolucoesindustriais.com.br/imgs-icons/logo_ADG-bg-black-og-1000x1000.png">
     <meta property="og:url" content="https://adgsolucoesindustriais.com.br/">
     <meta property="og:type" content="website">
     <title>ADG Soluções Industriais | Peças e manutenção para máquinas de corte a laser</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/commonClasses.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/commonClasses.css">
 </head>
 
 <body>
 
     <!-- Header Navbar -->
     <header class="header-position bg-black z-3 top-0">
-        <nav class="navbar container d-flex align-items-center py-1 px-2">
+        <nav class="navbar container d-flex align-items-center py-1 px-3">
             <div class="me-auto">
                 <picture>
-                    <source media="(max-width: 992px)" srcset="imgs-icons/logo_ADG-no-bg-200x100.png"
-                        width="150" height="75">
-                    <source media="(min-width: 992px)" srcset="imgs-icons/logo_ADG-no-bg-200x100.png"
-                        width="200" height="100">
+                    <source media="(max-width: 992px)" srcset="imgs-icons/logo_ADG-no-bg-200x100.png" width="150"
+                        height="75">
+                    <source media="(min-width: 992px)" srcset="imgs-icons/logo_ADG-no-bg-200x100.png" width="200"
+                        height="100">
                     <img src="imgs-icons/logo_ADG-no-bg-200x100.png" alt="logo da empresa ADG" width="200" height="100">
                 </picture>
             </div>
@@ -43,7 +44,12 @@
                         aria-label="Botão que leva para a seção serviços" href="#servicos">Serviços</a></li>
                 <li id="dropmenu"><a
                         class="nav_link fw7 fs-5 txtd-none c-red d-inline-flex align-items-center gap-2 text-uppercase"
-                        aria-label="Botão que leva para a seção serviços" href="#produtos">Produtos</a>
+                        aria-label="Botão que leva para a seção serviços" href="#produtos">Produtos<svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-caret-down-fill caret-icon-desktop" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg></a>
                     <ul id="menu-items"
                         class="menu-items m-0 p-0 list-unstyled position-absolute w-30pc rounded-bottom bg-black text-nowrap">
                         <li class="py-3 px-4"><a class="fw7 fs-6 txtd-none c-red text-uppercase"
@@ -96,14 +102,14 @@
                         href="#">Início</a></li>
                 <li><a class="fw7 fs-5 txtd-none c-red text-uppercase" aria-label="Botão que leva para a seção serviços"
                         href="#servicos">Serviços</a></li>
-                <li id="dropmenu-mobile"><a
-                        class="fw7 fs-5 txtd-none c-red d-inline-flex align-items-center gap-2 text-uppercase"
+                <li id="dropmenu-mobile"><button
+                        class="fw7 p-0 fs-5 txtd-none border-0 bg-transparent c-red d-inline-flex align-items-center gap-2 text-uppercase"
                         aria-label="Botão que leva para a seção serviços">Produtos<svg
                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-caret-down-fill caret-icon" viewBox="0 0 16 16">
+                            class="bi bi-caret-down-fill caret-icon-mobile" viewBox="0 0 16 16">
                             <path
                                 d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                        </svg></a>
+                        </svg></button>
                     <ul id="menu-items-mobile" class="menu-items-mobile m-0 list-unstyled position-inherit bg-grey">
                         <li class="p-3"><a class="fw7 fs-6 txtd-none c-red text-uppercase"
                                 href="#ceramicas">Cerâmicas</a></li>
@@ -135,18 +141,18 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="background bg-1">
-            <div class="d-flex flex-column py-10p text-center gap-4">
-                <div class="container text-center">
-                    <h1 class="display-4 fw8 c-grey1 mb-md-3 text-uppercase">Peças e manutenção para máquinas de corte a
-                        laser, com agilidade e precisão.</h1>
-                    <p class="fw-semibold c-grey2 fs-2 lt-s4 px-2">Soluções industriais rápidas e confiáveis para manter
-                        sua produção sem parar.
+        <section class="background bg-1 d-flex align-items-center justify-content-center align-self-center">
+            <div class="container d-flex flex-column px-3 gap-5 position-absolute position-hero">
+                <div>
+                    <h1 class="display-4 fw7 c-white2 mb-md-3 lh-1 text-uppercase opacity-75">Peças e manutenção <br>para corte a
+                        laser com agilidade e precisão.</h1>
+                    <p class="fw-semibold c-white2 fs-3 lt-s1 m-0 lh-sm">Soluções industriais rápidas e confiáveis
+                        <br>para manter sua produção sem parar
                     </p>
                 </div>
-                <a class="btn-hover txtd-none c-grey2 fs-4 bg-red2 align-items-center h-5r px-4 mx-3 d-flex justify-content-center align-self-center fw8 rounded text-uppercase"
+                <a class="text-center btn-hover btn-animation txtd-none c-white1 fs-4 bg-red2 align-items-center h-4r px-4 d-flex justify-content-center align-self-start fw7 rounded text-uppercase"
                     href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento.+"
-                    aria-label="Botão que leva para a seção serviços">Solicitar Um Orçamento Agora
+                    aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicite Seu Orçamento Agora
                 </a>
             </div>
         </section>
@@ -156,21 +162,21 @@
         <section id="sobre" class="background bg-0">
 
             <div class="container py-8r d-flex flex-column gap-5">
-                <h2 class="fs2r c-red fw8 text-uppercase text-center">Sobre Nós</h2>
+                <h2 class="fs2r c-red fw7 text-uppercase text-center">Sobre Nós</h2>
 
                 <div class="d-flex flex-column-reverse flex-md-row align-items-center">
-                    <h2 class="c-white fw8 fs-3 m-0 mt-4 me-md-auto mt-md-0 text-center text-md-start text-uppercase">
+                    <h2 class="c-white1 fw7 fs-3 m-0 mt-4 me-md-auto mt-md-0 text-center text-md-start text-uppercase">
                         Adg Soluções
                         Industriais Ltda</h2>
-                    <img class="me-lg-5" src="imgs-icons/logo_ADG-no-bg-250x150.png" alt="logo da empresa ADG"
+                    <img class="me-lg-4" src="imgs-icons/logo_ADG-no-bg-250x150.png" alt="logo da empresa ADG"
                         width="250" height="150">
                 </div>
                 <div class="lh-lg fs-5 pb-5 lt-s1 text-center text-md-start">
-                    <p class="m-0 c-white">Fundada em 2022, a <b>ADG Soluções
+                    <p class="m-0 c-white1">Fundada em 2022, a <b>ADG Soluções
                             Industriais Ltda</b> atua oferecendo <b>peças de reposição para máquinas de corte a
                             laser</b> e serviços de <b>manutenção preventiva e preditiva em equipamentos
                             industriais.</b></p>
-                    <p class="m-0 c-white">Com parcerias internacionais, incluindo
+                    <p class="m-0 c-white1">Com parcerias internacionais, incluindo
                         empresas <b>renomadas</b> da <b>China, Itália, Japão
                             e Alemanha</b>, trazemos ao mercado brasileiro soluções modernas, seguras e de alto
                         desempenho.
@@ -184,27 +190,30 @@
                 <div class="d-flex flex-column flex-lg-row gap-4 gap-lg-5 mb-5">
                     <div
                         class="d-flex justify-content-center align-items-center flex-column text-center bg-black bg-opacity-75 bd-red rounded p-4 p-lg-5">
-                        <img width="150" src="imgs-icons/mission_icon.svg" alt="Icone de um alvo representando a missão da empresa ADG">
-                        <h2 class="c-white fw8">Missão</h2>
-                        <p class="m-0 c-white">Empoderar o setor industrial com soluções em peças e manutenção,
+                        <img width="150" src="imgs-icons/mission_icon.svg"
+                            alt="Icone de um alvo representando a missão da empresa ADG">
+                        <h2 class="c-white1 fw7">Missão</h2>
+                        <p class="m-0 c-white1">Empoderar o setor industrial com soluções em peças e manutenção,
                             unindo agilidade, eficiência
                             e
                             inovação nos processos produtivos.</p>
                     </div>
                     <div
                         class="d-flex justify-content-center align-items-center flex-column text-center bg-black bg-opacity-75 bd-red rounded p-4 p-lg-5">
-                        <img width="150" src="imgs-icons/vision_icon.svg" alt="Icone de um olho representando a visão da empresa ADG">
-                        <h2 class="c-white fw8">Visão</h2>
-                        <p class="m-0 c-white">Ser reconhecida como líder em insumos industriais, promovendo
+                        <img width="150" src="imgs-icons/vision_icon.svg"
+                            alt="Icone de um olho representando a visão da empresa ADG">
+                        <h2 class="c-white1 fw7">Visão</h2>
+                        <p class="m-0 c-white1">Ser reconhecida como líder em insumos industriais, promovendo
                             crescimento sustentável e
                             tecnológico,
                             com parcerias sólidas e duradouras.</p>
                     </div>
                     <div
                         class="d-flex justify-content-center align-items-center flex-column text-center bg-black bg-opacity-75 bd-red rounded p-4 p-lg-5">
-                        <img width="150" src="imgs-icons/values_icon.svg" alt="Icone de um diamante representando os valores da empresa ADG">
-                        <h2 class="c-white fw8">Valores</h2>
-                        <p class="m-0 c-white">Valorizamos o <b>compromisso com o cliente</b>, a
+                        <img width="150" src="imgs-icons/values_icon.svg"
+                            alt="Icone de um diamante representando os valores da empresa ADG">
+                        <h2 class="c-white1 fw7">Valores</h2>
+                        <p class="m-0 c-white1">Valorizamos o <b>compromisso com o cliente</b>, a
                             <b>qualidade</b>, a <b>inovação</b>, a
                             <b>transparência</b> e a <b>segurança</b> em
                             tudo o que fazemos.
@@ -220,16 +229,17 @@
         <section id="servicos" class="background bg-3">
 
             <div class="container py-8r">
-                <h2 class="fs2r c-red fw8 text-uppercase text-center mb-5">Nossos Serviços</h2>
+                <h2 class="fs2r c-red fw7 text-uppercase text-center mb-5">Nossos Serviços</h2>
                 <!-- Main Service -->
-                <div class="d-flex flex-column gap-5r rounded-4 bg-black bg-opacity-25 p-3">
-                    <h2 class="c-white fw8 text-center">Plano de Manutenção Preventiva e Preditiva</h2>
+                <div class="d-flex flex-column gap-5r rounded-4 bg-black bg-opacity-25 py-3 px-2">
+                    <h2 class="c-white1 fw7 text-center">Plano de Manutenção Preventiva e Preditiva</h2>
                     <div class="d-flex flex-column flex-md-row gap-5">
                         <div class="w-100 d-flex flex-column">
-                            <img class="rounded bd-red w-100 mb-3" src="imgs-icons/services/plano_manutencao.webp"
+                            <img class="rounded bd-red w-100 mb-3" loading="lazy"
+                                src="imgs-icons/services/plano_manutencao.webp"
                                 alt="Imagem referência de Manutenção Preventiva">
                             <div>
-                                <p class="m-0 c-white text-center text-md-start">Nosso plano de manutenção visa
+                                <p class="m-0 c-white1 text-center text-md-start">Nosso plano de manutenção visa
                                     garantir a
                                     máxima
                                     eficiência, segurança
@@ -243,27 +253,27 @@
                             </div>
                         </div>
                         <div class="w-100 d-flex flex-column text-center">
-                            <h2 class="c-white fw8">Benefícios da Manutenção
+                            <h2 class="c-white1 fw7">Benefícios da Manutenção
                                 Preventiva/Preditiva</h2>
                             <div>
-                                <p class="display-5 fw-bold c-white m-0 mt-2">90%</p>
-                                <h3 class="c-white fw7 mb-2 fs-5">Redução de paradas</h3>
-                                <p class="m-0 c-white">Diminuição significativa de interrupções não programadas</p>
+                                <p class="display-5 fw-bold c-white1 m-0 mt-2">90%</p>
+                                <h3 class="c-white1 fw7 mb-2 fs-5">Redução de paradas</h3>
+                                <p class="m-0 c-white1">Diminuição significativa de interrupções não programadas</p>
                             </div>
                             <div>
-                                <p class="display-5 fw-bold c-white m-0 mt-2">60%</p>
-                                <h3 class="c-white fw7 mb-2 fs-5">Aumento da Vida Útil</h3>
-                                <p class="m-0 c-white">Prolongamento da durabilidade dos equipamentos</p>
+                                <p class="display-5 fw-bold c-white1 m-0 mt-2">60%</p>
+                                <h3 class="c-white1 fw7 mb-2 fs-5">Aumento da Vida Útil</h3>
+                                <p class="m-0 c-white1">Prolongamento da durabilidade dos equipamentos</p>
                             </div>
                             <div>
-                                <p class="display-5 fw-bold c-white m-0 mt-2">40%</p>
-                                <h3 class="c-white fw7 mb-2 fs-5">Redução de Custos</h3>
-                                <p class="m-0 c-white">Otimização do custo total de manutenção</p>
+                                <p class="display-5 fw-bold c-white1 m-0 mt-2">40%</p>
+                                <h3 class="c-white1 fw7 mb-2 fs-5">Redução de Custos</h3>
+                                <p class="m-0 c-white1">Otimização do custo total de manutenção</p>
                             </div>
                             <div>
-                                <p class="display-5 fw-bold c-white m-0 mt-2">30%</p>
-                                <h3 class="c-white fw7 mb-2 fs-5">Eficiência Energética</h3>
-                                <p class="m-0 c-white">Melhoria no consumo de energia</p>
+                                <p class="display-5 fw-bold c-white1 m-0 mt-2">30%</p>
+                                <h3 class="c-white1 fw7 mb-2 fs-5">Eficiência Energética</h3>
+                                <p class="m-0 c-white1">Melhoria no consumo de energia</p>
                             </div>
                         </div>
                     </div>
@@ -271,16 +281,17 @@
                     <!-- Subservice 1 -->
                     <div class="d-flex flex-column flex-md-row gap-5r">
                         <div class="w-100 d-flex flex-column">
-                            <img class="rounded bd-red w-100 mb-3" src="imgs-icons/services/Lubrificação.webp"
+                            <img class="rounded bd-red w-100 mb-3" loading="lazy"
+                                src="imgs-icons/services/Lubrificação.webp"
                                 alt="Imagem referência de Lubrificação de componentes mecânicos">
-                            <h3 class="c-white fw8 text-center">Lubrificação de Componentes Mecânicos</h3>
+                            <h3 class="c-white1 fw7 text-center">Lubrificação de Componentes Mecânicos</h3>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Aplicação de
                                         Lubrificantes
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Utilizamos lubrificantes
                                         específicos para patins, eixos
                                         e guias lineares, garantindo
@@ -291,10 +302,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Redução de Atrito
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         O processo evita desgaste
                                         prematuro e assegura a
                                         suavidade nos movimentos
@@ -305,10 +316,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Frequência Programada
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Seguimos rigorosamente o manual do fabricante ou análise de
                                         condição, normalmente em ciclos mensais.
                                     </p>
@@ -316,16 +327,17 @@
                             </div>
                         </div>
                         <div class="w-100 d-flex flex-column">
-                            <img class="rounded bd-red w-100 mb-3" src="imgs-icons/services/SistemaExaustao.webp"
+                            <img class="rounded bd-red w-100 mb-3" loading="lazy"
+                                src="imgs-icons/services/SistemaExaustao.webp"
                                 alt="Imagem referência de Sistema de Exaustão e Ar Comprimido">
-                            <h3 class="c-white fw8 text-center">Sistema de Exaustão e Ar Comprimido</h3>
+                            <h3 class="c-white1 fw7 text-center">Sistema de Exaustão e Ar Comprimido</h3>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Verificação dos
                                         Filtros de Exaustão
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Inspecionamos regularmente os
                                         filtros quanto à saturação e
                                         integridade, garantindo a eficiência
@@ -337,11 +349,11 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Troca dos Filtros do
                                         Secador de Ar
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Substituímos filtros coalescentes e
                                         de partículas para assegurar a
                                         qualidade do ar comprimido,
@@ -353,10 +365,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Manutenção do Compressor
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Realizamos a troca periódica dos filtros de ar de admissão e óleo, mantendo
                                         a
                                         eficiência do compressor e protegendo os componentes internos contra falhas
@@ -370,15 +382,16 @@
                     <!-- Subservice 2 -->
                     <div class="d-flex flex-column flex-md-row gap-5r">
                         <div class="w-100 d-flex flex-column">
-                            <img class="rounded bd-red w-100 mb-3" src="imgs-icons/services/limpeza_geral_maquina.webp"
+                            <img class="rounded bd-red w-100 mb-3" loading="lazy"
+                                src="imgs-icons/services/limpeza_geral_maquina.webp"
                                 alt="Imagem referência de Limpeza Geral da Máquina">
-                            <h3 class="c-white fw8 text-center">Limpeza Geral da Máquina</h3>
+                            <h3 class="c-white1 fw7 text-center">Limpeza Geral da Máquina</h3>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Remoção de Resíduos
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Eliminação de resíduos sólidos
                                         acumulados nas superfícies
                                     </p>
@@ -386,10 +399,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Aspiração de Poeira
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Limpeza profunda de áreas de difícil
                                         acesso
                                     </p>
@@ -397,10 +410,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Limpeza Técnica
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Aplicação de produtos específicos
                                         para componentes sensíveis
                                     </p>
@@ -408,10 +421,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Inspeção Final
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Verificação da limpeza completa de
                                         todos os sistemas
                                     </p>
@@ -421,16 +434,17 @@
 
                         <!-- Subservice 3 -->
                         <div class="w-100 d-flex flex-column">
-                            <img class="rounded bd-red w-100 mb-3" src="imgs-icons/services/painel_eletrico.webp" alt="Imagem referência de Verificação de
+                            <img class="rounded bd-red w-100 mb-3" loading="lazy"
+                                src="imgs-icons/services/painel_eletrico.webp" alt="Imagem referência de Verificação de
                             Componentes Elétricos">
-                            <h3 class="c-white fw8 text-center">Verificação de
+                            <h3 class="c-white1 fw7 text-center">Verificação de
                                 Componentes Elétricos</h3>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Inspeção do Painel Elétrico
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Checagem de conexões, cabos, contatos, fusíveis, disjuntores e fontes
                                         de alimentação para detectar sinais de aquecimento ou mau contato.
                                     </p>
@@ -438,10 +452,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Verificação do CNC
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Análise dos sistemas de controle numérico computadorizado,
                                         garantindo precisão e confiabilidade operacional.
                                     </p>
@@ -449,10 +463,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Inspeção da Lagarta
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Verificação visual e funcional da integridade dos cabos e conduítes em
                                         movimento, prevenindo rompimentos.
                                     </p>
@@ -464,16 +478,16 @@
                     <!-- Subservice 4 -->
                     <div class="d-flex flex-column flex-md-row gap-5r">
                         <div class="w-100 d-flex flex-column">
-                            <img class="rounded bd-red w-100 mb-3"
+                            <img class="rounded bd-red w-100 mb-3" loading="lazy"
                                 src="imgs-icons/services/manutencao-de-chiller-01.webp"
                                 alt="Imagem referência de Sistema de Refrigeração (Chiller)">
-                            <h3 class="c-white fw8 text-center">Sistema de Refrigeração (Chiller)</h3>
+                            <h3 class="c-white1 fw7 text-center">Sistema de Refrigeração (Chiller)</h3>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Limpeza dos Filtros
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Realizamos a remoção sistemática de partículas e sujeiras dos
                                         filtros de entrada e saída do chiller. Este procedimento é
                                         fundamental para manter a eficiência de troca térmica e
@@ -483,10 +497,10 @@
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Avaliação da Qualidade da Água
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Verificamos regularmente os níveis de impurezas, pH e
                                         condutividade da água utilizada no chiller. Esta análise previne
                                         incrustações, corrosões e garante o desempenho ótimo do
@@ -498,46 +512,45 @@
 
                         <!-- Subservice 5 -->
                         <div class="w-100 d-flex flex-column">
-                            <img class="rounded bd-red w-100 mb-3" src="imgs-icons/services/suporte.webp"
+                            <img class="rounded bd-red w-100 mb-3" loading="lazy" src="imgs-icons/services/suporte.webp"
                                 alt="Imagem referência de Atendimento de Dúvidas Operacionais">
-                            <h3 class="c-white fw8 text-center">Atendimento de Dúvidas Operacionais</h3>
+                            <h3 class="c-white1 fw7 text-center">Atendimento de Dúvidas Operacionais</h3>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Suporte Técnico Especializado
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Atendimento por especialistas qualificados
                                     </p>
                                 </div>
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Orientação Operacional
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Esclarecimento sobre procedimentos corretos
                                     </p>
                                 </div>
                             </div>
                             <div class="d-flex rounded w-100 p-3 mt-3 bg-red1">
                                 <div>
-                                    <h4 class="c-white fw8">
+                                    <h4 class="c-white1 fw7">
                                         Auxílio em Pequenas Intervenções
                                     </h4>
-                                    <p class="m-0 c-white fs-smr">
+                                    <p class="m-0 c-white1 fs-smr">
                                         Suporte para ajustes e correções simples
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="btn-hover txtd-none c-grey2 fs-4 bg-red2 align-items-center h-5r px-3 d-flex justify-content-center text-center align-self-center fw8 rounded text-uppercase"
+                    <a class="btn-hover btn-animation txtd-none c-white1 fs-4 bg-red2 align-items-center h-4r px-5 d-flex justify-content-center text-center align-self-center fw7 rounded text-uppercase"
                         href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+saber+mais+sobre+o+plano+de+manutenção+preventiva+e+preditiva+de+vocês.+"
                         target="_blank" rel="noopener noreferrer external"
-                        aria-label="Botão para solicitar orçamento que leva para o whatsapp">Saiba
-                        Mais Sobre Nosso Plano</a>
+                        aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar Orçamento</a>
                 </div>
             </div>
 
@@ -545,17 +558,17 @@
 
 
         <!-- Products -->
-        <section id="produtos" class="background bg-0">
+        <section id="produtos" class="background py-8r bg-0 pb-5">
             <div
-                class="py-8r d-flex justify-content-center position-relative flex-column flex-md-row text-center gap-md-3 align-items-center">
-                <h2 class="fs2r c-red fw8 text-uppercase">Produtos</h2>
-                <img id="seloPosition" src="imgs-icons/selo_original.png" alt="Selo de produto original">
+                class="d-flex justify-content-center position-relative flex-column flex-md-row text-center gap-md-3 align-items-center">
+                <h2 class="fs2r c-red fw7 text-uppercase">Produtos</h2>
+                <img id="seloPosition" loading="lazy" src="imgs-icons/selo_original.png" alt="Selo de produto original">
             </div>
             <div class="d-flex flex-column gap-5">
                 <!-- Product 1 -->
 
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container">
-                    <h3 id="ceramicas" class="c-white fw8 text-center pt-7r">Cerâmicas</h3>
+                    <h3 id="ceramicas" class="c-white1 fw7 text-center pt-7r">Cerâmicas</h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
                         <div
                             class="d-flex flex-column text-center bg-black bg-opacity-75 col-5 col-md-3 col-lg-2 bd-red rounded">
@@ -567,12 +580,12 @@
                                     src="imgs-icons/products/ceramics/kt-b2/kt-b2_pic1.webp"
                                     alt="Cerâmica modelo KT-B2 para máquina de corte a laser">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">KT-B2</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de corte</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">KT-B2</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de corte</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -586,12 +599,12 @@
                                     src="imgs-icons/products/ceramics/kt-x/kt-x_pic1.webp"
                                     alt="Cerâmica modelo KT-X para máquina de corte a laser">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">KT-X</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de corte</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">KT-X</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de corte</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -605,12 +618,12 @@
                                     src="imgs-icons/products/ceramics/kt-xb/kt-xb_pic1.webp"
                                     alt="Cerâmica modelo KT-XB para máquina de corte a laser">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">KT-XB</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de corte</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">KT-XB</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de corte</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -624,12 +637,12 @@
                                     src="imgs-icons/products/ceramics/d41-m11/d41-m11_pic1.webp"
                                     alt="Cerâmica modelo D41-M11 para máquina de corte a laser">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">D41-M11</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de corte</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">D41-M11</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de corte</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -643,12 +656,12 @@
                                     src="imgs-icons/products/ceramics/fc-40/fc-40_pic1.webp"
                                     alt="Cerâmica modelo FC-40 para máquina de corte de tubo">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">FC-40</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de tubo</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">FC-40</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de tubo</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -662,12 +675,12 @@
                                     src="imgs-icons/products/ceramics/wtc-04/wtc-04_pic1.webp"
                                     alt="Cerâmica modelo WTC-04 para máquina de corte de tubo">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">WTC-04</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de tubo</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">WTC-04</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de tubo</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -681,12 +694,12 @@
                                     src="imgs-icons/products/ceramics/kt-kn/kt-kn_pic1.webp"
                                     alt="Cerâmica modelo KT-KN para máquina de corte de tubo">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">KT-KN</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de tubo</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">KT-KN</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de tubo</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -700,12 +713,12 @@
                                     src="imgs-icons/products/ceramics/kt-ks/kt-ks_pic1.webp"
                                     alt="Cerâmica modelo KT-KS para máquina de corte de tubo">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">KT-KS</h4>
-                            <p class="mb-2 px-1 c-white">Para máquinas de tubo</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">KT-KS</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de tubo</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
                     </div>
@@ -715,12 +728,12 @@
 
                 <!-- Product 2 -->
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container mt-4">
-                    <h3 id="bicosdecorte" class="c-white fw8 text-center pt-7r">Bicos de Corte</h3>
+                    <h3 id="bicosdecorte" class="c-white1 fw7 text-center pt-7r">Bicos de Corte</h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
                         <div
                             class="d-flex flex-column text-center bg-black bg-opacity-75 col-11 col-md-10 bd-red rounded">
-                            <p class="my-3 px-2 c-white">Trabalhamos com as melhores marcas de bicos para corte a
+                            <p class="my-3 px-2 c-white1">Trabalhamos com as melhores marcas de bicos para corte a
                                 laser,
                                 oferecendo uma variedade que
                                 inclui bicos de corte simples e duplo, além de diversos tamanhos e modelos</p>
@@ -761,9 +774,9 @@
                                             <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                         </button>
                                     </div>
-                                    <h4 class="c-white fw7 my-2 fs-5">Duplo</h4>
-                                    <p class="mb-0 px-1 c-white">Para máquinas de corte de chapa</p>
-                                    <p class="mb-2 px-1 c-white"><b>Modelos X, E, C</b></p>
+                                    <h4 class="c-white1 fw7 px-1 my-2 fs-5">Duplo</h4>
+                                    <p class="mb-0 px-1 c-white1">Para máquinas de corte de chapa</p>
+                                    <p class="mb-2 px-1 c-white1"><b>Modelos X, E, C</b></p>
                                 </div>
 
                                 <div
@@ -797,8 +810,8 @@
                                             <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                         </button>
                                     </div>
-                                    <h4 class="c-white fw7 my-2 fs-5">Simples</h4>
-                                    <p class="mb-2 px-1 c-white">Para máquinas de corte de chapa</p>
+                                    <h4 class="c-white1 fw7 px-1 my-2 fs-5">Simples</h4>
+                                    <p class="mb-2 px-1 c-white1">Para máquinas de corte de chapa</p>
                                 </div>
 
                                 <div
@@ -808,8 +821,8 @@
                                             src="imgs-icons/products/bicos-corte/duplo-maquina-tubo/duplo-maquina-tubo_pic0.webp"
                                             alt="Bico duplo para maquina de corte de tubo">
                                     </div>
-                                    <h4 class="c-white fw7 my-2 fs-5">Duplo</h4>
-                                    <p class="mb-2 px-1 c-white">Para máquinas de corte de tubo</p>
+                                    <h4 class="c-white1 fw7 px-1 my-2 fs-5">Duplo</h4>
+                                    <p class="mb-2 px-1 c-white1">Para máquinas de corte de tubo</p>
                                 </div>
 
                                 <div
@@ -819,14 +832,14 @@
                                             src="imgs-icons/products/bicos-corte/simples-maquina-tubo/simples-maquina-tubo_pic0.webp"
                                             alt="Bico simples para maquina de corte de tubo">
                                     </div>
-                                    <h4 class="c-white fw7 my-2 fs-5">Simples</h4>
-                                    <p class="mb-2 px-1 c-white">Para máquinas de corte de tubo</p>
+                                    <h4 class="c-white1 fw7 px-1 my-2 fs-5">Simples</h4>
+                                    <p class="mb-2 px-1 c-white1">Para máquinas de corte de tubo</p>
                                 </div>
                             </div>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -836,7 +849,7 @@
 
                 <!-- Product 3 -->
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container mt-4">
-                    <h3 id="consumiveisplasma" class="c-white fw8 text-center pt-7r">Consumíveis Para Tochas Plasma
+                    <h3 id="consumiveisplasma" class="c-white1 fw7 text-center pt-7r">Consumíveis Para Tochas Plasma
                     </h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
@@ -847,14 +860,14 @@
                                     src="imgs-icons/products/consumiveis-para-tochas-plasma/consumiveis-para-tochas-plasma_pic0.webp"
                                     alt="Imagem de alguns Consumiveis Para Tochas Plasma">
                             </div>
-                            <p class="my-3 px-2 c-white">Trabalhamos com bicos, bocais, capas de retenção e eletrodos
+                            <p class="my-3 px-2 c-white1">Trabalhamos com bicos, bocais, capas de retenção e eletrodos
                                 de
                                 plasma, garantindo qualidade
                                 e compatibilidade com diversos modelos de tocha plasma.</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -863,7 +876,7 @@
 
                 <!-- Product 4 -->
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container mt-4">
-                    <h3 id="lentesprotetores" class="c-white fw8 text-center pt-7r">Lentes / Protetores</h3>
+                    <h3 id="lentesprotetores" class="c-white1 fw7 text-center pt-7r">Lentes / Protetores</h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
                         <div
@@ -876,8 +889,8 @@
                                     src="imgs-icons/products/lentes-e-protetores/lentes-cabecote_pic1.webp"
                                     alt="Lentes para Cabeçote">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Lentes</h4>
-                            <ul class="d-grid gap-2 justify-content-around list-style c-white text-start py-1 px-2r">
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Lentes</h4>
+                            <ul class="d-grid gap-2 justify-content-around list-style c-white1 text-start py-1 ps-2r pe-1">
                                 <li>Lentes óticas, para cabeçotes <b>precitec, han's laser,
                                         salvagnini, bystronic</b> e outros;</li>
                                 <li>Lente focal, para cabeçotes <b>precitec, han's laser,
@@ -886,10 +899,10 @@
                                 <li>Lente focal procutter f100;</li>
                                 <li>Lentes precitec.</li>
                             </ul>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -903,9 +916,9 @@
                                     src="imgs-icons/products/lentes-e-protetores/protetores-lente_pic1.webp"
                                     alt="Protetor para Lentes">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5 mt-4 mt-md-2">Protetor para Lentes</h4>
-                            <div class="d-flex justify-content-center gap-3 px-2r">
-                                <ul class="p-0 w-100 c-white text-start py-1">
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5 mt-4 mt-md-2">Protetor para Lentes</h4>
+                            <div class="d-flex justify-content-center gap-3 ps-2r pe-1">
+                                <ul class="p-0 w-100 c-white1 text-start py-1">
                                     <li>21.5*2</li>
                                     <li>22.4*4.1</li>
                                     <li>24.9*1.5</li>
@@ -919,7 +932,7 @@
                                     <li>37*7 12KW</li>
 
                                 </ul>
-                                <ul class="p-0 w-100 c-white text-start py-1 ps-3">
+                                <ul class="p-0 w-100 c-white1 text-start py-1 ps-3">
                                     <li>37*7 15KW</li>
                                     <li>37*7 20KW</li>
                                     <li>37*7 30KW</li>
@@ -932,10 +945,10 @@
                                     <li>55*9 30KW</li>
                                 </ul>
                             </div>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -945,7 +958,7 @@
 
                 <!-- Product 5 -->
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container mt-4">
-                    <h3 id="filtros" class="c-white fw8 text-center pt-7r">Filtros</h3>
+                    <h3 id="filtros" class="c-white1 fw7 text-center pt-7r">Filtros</h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
                         <div
@@ -976,13 +989,13 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Elementos para Secador</h4>
-                            <p class="mb-0 px-1 c-white">020-AC, 020-GP, 020-HE e P33KA00ESE</p>
-                            <p class="mb-2 px-1 c-white"><b>Parker, Jaguar e Dehaha</b></p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Elementos para Secador</h4>
+                            <p class="mb-0 px-1 c-white1">020-AC, 020-GP, 020-HE e P33KA00ESE</p>
+                            <p class="mb-2 px-1 c-white1"><b>Parker, Jaguar e Dehaha</b></p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1020,12 +1033,12 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Filtros de Ar</h4>
-                            <p class="mb-2 c-white px-1">Exaustores <b>Donaldson / Topssin</b></p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Filtros de Ar</h4>
+                            <p class="mb-2 c-white1 px-1">Exaustores <b>Donaldson / Topssin</b></p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1039,11 +1052,11 @@
                                     src="imgs-icons/products/filtros/filtros-parker/filtro-parker_pic1.webp"
                                     alt="Filtro Parker">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Filtros Parker</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Filtros Parker</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1057,11 +1070,11 @@
                                     src="imgs-icons/products/filtros/filtros-de-oleo/filtro-de-oleo-schulz_pic1.webp"
                                     alt="Filtro de Óleo Schulz">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Filtros de Óleo</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Filtros de Óleo</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1075,11 +1088,11 @@
                                     src="imgs-icons/products/filtros/separador-de-elementos/separador-de-elementos_pic1.webp"
                                     alt="Separador de Elementos">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Separador de Elementos</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Separador de Elementos</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1090,11 +1103,11 @@
                                     src="imgs-icons/products/filtros/filtro-messa/filtro-messa_pic0.webp"
                                     alt="Filtro Messa">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Filtro Messa</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Filtro Messa</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1124,11 +1137,11 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Filtros Rayce</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Filtros Rayce</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1139,7 +1152,7 @@
 
                 <!-- Product 6 -->
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container mt-4">
-                    <h3 id="limpeza" class="c-white fw8 text-center pt-7r">Limpeza</h3>
+                    <h3 id="limpeza" class="c-white1 fw7 text-center pt-7r">Limpeza</h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
                         <div
@@ -1180,11 +1193,11 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Álcool Isopropílico 99,8%</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Álcool Isopropílico 99,8%</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1214,11 +1227,11 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Removedor de Pó</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Removedor de Pó</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1232,11 +1245,11 @@
                                     src="imgs-icons/products/limpeza/escova-de-aco/escova-de-aco_pic1.webp"
                                     alt="Escova de Aço">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Escova de Aço</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Escova de Aço</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1247,11 +1260,11 @@
                                     src="imgs-icons/products/limpeza/spray-solvente/spray-solvente-ipa.webp"
                                     alt="Spray Solvente">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Spray Solvente</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Spray Solvente</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1265,16 +1278,16 @@
                                     src="imgs-icons/products/limpeza/cotonete/cotonete-plotter_pic1.webp"
                                     alt="Cotonete Plotter">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Cotonetes</h4>
-                            <ul class="mb-2 c-white text-start pb-1 ps-2r pe-2">
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Cotonetes</h4>
+                            <ul class="mb-2 c-white1 text-start pb-1 ps-2r pe-1">
                                 <li>Grande</li>
                                 <li>Médio</li>
                                 <li>Pequeno</li>
                             </ul>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1285,7 +1298,7 @@
 
                 <!-- Product 7 -->
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container mt-4">
-                    <h3 id="pecasecabecote" class="c-white fw8 text-center pt-7r">Peças e Cabeçotes</h3>
+                    <h3 id="pecasecabecote" class="c-white1 fw7 text-center pt-7r">Peças e Cabeçotes</h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
                         <div
@@ -1298,11 +1311,11 @@
                                     src="imgs-icons/products/pecas-e-cabecotes/aneis-vedacao-cabecote/aneis-vedacao-cabecote_pic1.webp"
                                     alt="Aneis de Vedação para Cabeçote">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Aneis de Vedação para Cabeçote</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Aneis de Vedação para Cabeçote</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1334,11 +1347,11 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Sensores para Cabeçote</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Sensores para Cabeçote</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1372,12 +1385,12 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Cabeçotes</h4>
-                            <p class="mb-2 c-white px-1"><b>Precitec, RayTools, Bodor</b>, entre outras marcas.</p>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Cabeçotes</h4>
+                            <p class="mb-2 c-white1 px-1"><b>Precitec, RayTools, Bodor</b>, entre outras marcas.</p>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1388,8 +1401,8 @@
 
                 <!-- Product 8 -->
                 <div class="d-flex flex-column pb-7r mt-4 rounded-4 bg-black bg-opacity-25 container">
-                    <h3 id="sensores" class="c-white fw8 text-center pt-7r">Sensores</h3>
-                    <p class="mb-2 c-grey2 mb-5 px-1 text-center fw-bold fs-5">Faceados e não faceados</p>
+                    <h3 id="sensores" class="c-white1 fw7 text-center pt-7r">Sensores</h3>
+                    <p class="mb-2 c-white2 mb-5 px-1 text-center fw-bold fs-5">Faceados e não faceados</p>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
                         <div
@@ -1422,11 +1435,11 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Capacitivos</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Capacitivos</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1460,21 +1473,20 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Indutivos</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Indutivos</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
-                        ]
                     </div>
 
                 </div>
 
                 <!-- Product 9 -->
                 <div class="d-flex flex-column gap-5 pb-7r rounded-4 bg-black bg-opacity-25 container mt-4">
-                    <h3 id="diversos" class="c-white fw8 text-center pt-7r">Diversos</h3>
+                    <h3 id="diversos" class="c-white1 fw7 text-center pt-7r">Diversos</h3>
                     <div class="d-flex justify-content-center flex-wrap gap-4">
 
                         <div
@@ -1511,11 +1523,11 @@
                                     <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
                                 </button>
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Patins</h4>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Patins</h4>
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1529,17 +1541,17 @@
                                     src="imgs-icons/products/diversos/oleo-e-graxa/graxa-castanha-mp2.webp"
                                     alt="Graxa Castanha mp2">
                             </div>
-                            <h4 class="c-white fw7 my-2 fs-5">Óleos e Graxas</h4>
-                            <ul class="mb-2 c-white text-start py-1 ps-2r pe-2">
+                            <h4 class="c-white1 fw7 px-1 my-2 fs-5">Óleos e Graxas</h4>
+                            <ul class="mb-2 c-white1 text-start py-1 ps-2r pe-1">
                                 <li>S8000 Sintético PAO</li>
                                 <li>S4000 Semi sintético</li>
                                 <li>Visc. 32, 46, 68</li>
                                 <li>5L e 20L</li>
                             </ul>
-                            <a class="btn-hover txtd-none c-grey2 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw8 rounded-bottom"
+                            <a class="btn-hover txtd-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw7 rounded-bottom"
                                 href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+uma+cotação+para+um+dos+seus+produtos.+"
                                 target="_blank" rel="noopener noreferrer external"
-                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Solicitar
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
                                 Orçamento</a>
                         </div>
 
@@ -1556,32 +1568,32 @@
 
             <div class="container py-8r">
                 <div class="text-center mb-5">
-                    <h2 class="fs2r c-red fw8 text-uppercase mb-4">Fale Conosco</h2>
-                    <p class="c-grey2">Tem alguma dúvida ou gostaria de solicitar um orçamento? Envie sua mensagem.</p>
+                    <h2 class="fs2r c-red fw7 text-uppercase mb-4">Fale Conosco</h2>
+                    <p class="c-white2">Tem alguma dúvida ou gostaria de solicitar um orçamento? Envie sua mensagem.</p>
                 </div>
 
                 <form action="php/enviar-email.php" method="POST" class="col-lg-8 mx-auto" id="form">
 
                     <div class="mb-4">
-                        <label for="nome" class="form-label c-grey2">Nome</label>
+                        <label for="nome" class="form-label c-white2">Nome</label>
                         <input type="text" class="form-control border-3" id="nome" name="nome"
                             placeholder="Digite seu nome" required>
                     </div>
 
                     <div class="mb-4">
-                        <label for="email" class="form-label c-grey2">E-mail</label>
+                        <label for="email" class="form-label c-white2">E-mail</label>
                         <input type="email" class="form-control border-3" id="email" name="email"
                             placeholder="seu.email@exemplo.com" required>
                     </div>
 
                     <div class="mb-4">
-                        <label for="telefone" class="form-label c-grey2">Telefone (Opcional)</label>
+                        <label for="telefone" class="form-label c-white2">Telefone (Opcional)</label>
                         <input type="tel" class="form-control border-3" id="telefone" name="telefone"
                             placeholder="(00) 00000-0000">
                     </div>
 
                     <div class="mb-4">
-                        <label for="mensagem" class="form-label c-grey2">Sua Mensagem</label>
+                        <label for="mensagem" class="form-label c-white2">Sua Mensagem</label>
                         <textarea class="form-control border-3" id="mensagem" name="mensagem" rows="6"
                             placeholder="Digite sua dúvida ou solicitação aqui..." required maxlength="3000"></textarea>
 
@@ -1592,7 +1604,7 @@
 
                     <div class="text-center">
                         <button type="submit" id="btnSubmit"
-                            class="txtd-none border-0 c-grey2 fs-5 bg-red2 px-5 py-3 fw8 rounded"
+                            class="txtd-none border-0 c-white1 fs-5 bg-red2 px-5 py-3 fw7 rounded"
                             aria-label="Botão para enviar o e-mail">
                             Enviar Mensagem
                         </button>
@@ -1610,11 +1622,11 @@
         <div class="container pb-4">
             <img src="imgs-icons/logo_ADG-no-bg-200x100.png" alt="logo da empresa ADG" width="120" height="60">
             <div class="d-flex flex-column mt-2">
-                <p class="mb-3 c-grey2">Rua Antonio Bravo Plaça, 320 - Ipatinga - Sorocaba/SP</p>
-                <p class="mb-3 c-grey2">vendas@adgsolucoesindustriais.com.br</p>
-                <p class="mb-3 c-grey2">+55 15 99677-1241</p>
+                <p class="mb-3 c-white2">Rua Antonio Bravo Plaça, 320 - Ipatinga - Sorocaba/SP</p>
+                <p class="mb-3 c-white2">vendas@adgsolucoesindustriais.com.br</p>
+                <p class="mb-3 c-white2">+55 15 99677-1241</p>
                 <div class="d-flex gap-3">
-                    <a class="c-grey2" href="https://instagram.com/adgsolucoesindustriais"
+                    <a class="c-white2" href="https://instagram.com/adgsolucoesindustriais"
                         aria-label="Botão que leva para o instagram">
                         <div class="icon_link rounded-4 bg-red2 p-2">
                             <svg xmlns="http://w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -1624,7 +1636,7 @@
                             </svg>
                         </div>
                     </a>
-                    <a class="c-grey2" href="mailto:vendas@adgsolucoesindustriais.com.br"
+                    <a class="c-white2" href="mailto:vendas@adgsolucoesindustriais.com.br"
                         aria-label="Botão que direciona para o e-mail">
                         <div class="icon_link rounded-4 bg-red2 p-2">
                             <svg xmlns="http://w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -1639,7 +1651,7 @@
         </div>
         <hr class="my-4">
         <div class="text-center">
-            <p class="c-grey2 fs-smr">© 2025 ADG Soluções Industriais | Todos os direitos reservados.</p>
+            <p class="c-white2 fs-smr">© 2025 ADG Soluções Industriais | Todos os direitos reservados.</p>
         </div>
 
     </footer>
@@ -1662,8 +1674,8 @@
 
     <script src="script/script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous" defer></script>
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"
+        defer></script>
 </body>
 
 </html>

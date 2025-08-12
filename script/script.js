@@ -25,28 +25,28 @@ window.addEventListener('scroll', function () {
 
 /* Dropmenu e Dropmenu-Mobile */
 
+
 // Seleciona o dropmenu
 const dropmenu = document.getElementById('dropmenu')
 
 // Evento que abre o dropmenu quando entra no elemento ou em qualquer um de seus elementos filhos
 dropmenu.addEventListener('mouseover', () => {
     document.getElementById('menu-items').classList.add('expand-dropmenu')
+    document.querySelector('.caret-icon-desktop').classList.add('rotate-up')
 })
 
 // Evento que fecha o dropmenu quando o cursor do mouse deixa o elemento ou qualquer um de seus elementos filhos
 dropmenu.addEventListener('mouseout', () => {
     document.getElementById('menu-items').classList.remove('expand-dropmenu')
+    document.querySelector('.caret-icon-desktop').classList.remove('rotate-up')
 })
 
 
 const dropmenu_mobile = document.getElementById('dropmenu-mobile')
-const caret_icon = document.querySelector('.caret-icon')
-
 dropmenu_mobile.addEventListener('click', () => {
     document.getElementById('menu-items-mobile').classList.toggle('expand-dropmenu')
-    caret_icon.classList.toggle('rotate-up')
+    document.querySelector('.caret-icon-mobile').classList.toggle('rotate-up')
 })
-
 
 /* Formulário */
 

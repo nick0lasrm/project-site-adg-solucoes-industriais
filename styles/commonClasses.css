@@ -1,8 +1,6 @@
 /* Padding */
-.py-10p {padding: 10% 0;}
 .py-8r {padding: 7rem 10px;}
-.px-2r {padding: 0 2rem;}
-.ps-2r {padding-left: 2rem;}
+.ps-2r {padding-left: 1.8rem;}
 .pt-7r {padding-top: 7rem;}
 .pb-7r {padding-bottom: 7rem;}
 
@@ -13,9 +11,8 @@
 
 /* Color */
 .c-red {color: #c71414;}
-.c-white {color: #dbdbdb;}
-.c-grey1 {color: #d8d8d883}
-.c-grey2 {color: #cecece;}
+.c-white1 {color: #dbdbdb;}
+.c-white2 {color: #d1d1d1;}
 
 
 /* Gap */
@@ -23,19 +20,18 @@
 
 
 /* Font Weight */
-.fw8 {font-weight: 800;}
 .fw7 {font-weight: 700;}
 
 
 /* Font Size */
 .fs2r {font-size: 2.5rem;} 
 .fs-smr {font-size: smaller;}
-.fs-100p {font-size: 100%;}
+.fs-100p {font-size: 110%;}
 
 
 /* Height */
-.h-3r {height: 3rem;}
-.h-5r {height: 5rem;}
+.h-3r {height: 3.5rem;}
+.h-4r {height: 4.5rem;}
 
 
 /* Width */
@@ -48,7 +44,7 @@
 
 /* Background Color */
 .bg-red1 {background-color: #530707ad;}
-.bg-red2 {background-color: #af1a1a;}
+.bg-red2 {background-color: #7a0707;}
 .bg-grey {background-color: #050505;}
 
 
@@ -58,4 +54,3 @@
 
 /* Letter Spacing */
 .lt-s1 {letter-spacing: 1px;}
-.lt-s4 {letter-spacing: 4px;}
