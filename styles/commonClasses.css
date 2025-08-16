@@ -1,8 +1,6 @@
 /* Padding */
-.py-8r {padding: 7rem 10px;}
 .ps-2r {padding-left: 1.8rem;}
-.pt-7r {padding-top: 7rem;}
-.pb-7r {padding-bottom: 7rem;}
+.py-4r {padding: 4rem 0;}
 
 /* Margin */
 .mb-5r {margin-bottom: 5rem;}
@@ -16,15 +14,12 @@
 
 
 /* Gap */
-.gap-5r {gap: 5rem;}
-
-
-/* Font Weight */
-.fw7 {font-weight: 700;}
+.gap-3r {gap: 3rem;}
+.gap-1r {gap: .8rem;}
 
 
 /* Font Size */
-.fs2r {font-size: 2.5rem;} 
+.fs2r {font-size: 2rem;} 
 .fs-smr {font-size: smaller;}
 .fs-100p {font-size: 105%;}
 
@@ -46,10 +41,6 @@
 .bg-red1 {background-color: #530707ad;}
 .bg-red2 {background-color: #7a0707;}
 .bg-grey {background-color: #050505;}
-
-
-/* Text Decoration */
-.txtd-none {text-decoration: none;}
 
 
 /* Letter Spacing */

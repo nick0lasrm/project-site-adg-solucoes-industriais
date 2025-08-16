@@ -1,14 +1,14 @@
 /* Mobile menu */
 
 // Seleciona o menu e o botão (Mobile)
-var mobile_menu = document.getElementById('mobile_menu')
-var btnMenu = document.getElementById('btn_menu')
 
 // Função para abrir ou fechar menu (Mobile)
-function animar() {
-    btnMenu.classList.toggle('ativar')
-    mobile_menu.classList.toggle('expand_menu')
-}
+document.getElementById('btn_menu').addEventListener('click', function () {
+    document.getElementById('btn_menu').classList.toggle('ativar')
+    document.getElementById('mobile_menu').classList.toggle('expand_menu')
+})
+
+
 
 window.addEventListener('scroll', function () {
     // Ativa ou desativa botão usado para voltar ao topo descendo ou subindo a página (Mobile)
@@ -49,6 +49,8 @@ dropmenu_mobile.addEventListener('click', () => {
 })
 
 /* Formulário */
+
+// Envio do formulário por email
 
 // Seleciona o formulário, o botão de envio e o status
 var form = document.getElementById('form');
@@ -112,6 +114,8 @@ async function handleSubmit(event) {
 if (form) {
     form.addEventListener("submit", handleSubmit);
 }
+
+
 
 // Lógica Do Contador De Caracteres
 

@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body * {
+html {
     scroll-behavior: smooth;
 }
 
@@ -21,8 +21,15 @@ body * {
 
 /* Buttons Hover */
 
+.btn-hover {transition: all .3s ease;}
+
 .btn-hover:hover {
-    background-color: #a81a1a;
+    background-color: #c21818;
+    color: #ffffff;
+}
+
+div #btnSubmitWhatsapp:hover {
+    background-color: #1da51d;
     color: #ffffff;
     transition: all .3s ease;
 }
@@ -34,30 +41,37 @@ body * {
 /*  Background Sections  */
 
 .background {
-    min-height: 100vh;
+    min-height: 90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.bg-0 {
-    background-image: linear-gradient(0deg, #000000, #000000b4, #000000), url(../imgs-icons/backgroundImages/backgroundimage.webp);
+.bg-01 {background-image: linear-gradient(0deg, #707070, #ffffff4d, #ffffff00);}
+.bg-02 {background-image: linear-gradient(0deg, #707070, #707070, #707070);}
+.bg-03 {background-image: linear-gradient(0deg, #ffffff00, #ffffff4d, #707070);}
 
+.bg-0 {background-image: linear-gradient(0deg, #000000, #141414b4, #000000), url(../imgs-icons/backgroundImages/backgroundimage.webp); min-height: 100vh;}
+
+.bg-1 {background-image: linear-gradient(0deg, #000000, #00000041, #000000), url(../imgs-icons/backgroundImages/backgroundimage1.webp);}
+
+.bg-2 {background-image: linear-gradient(0deg, #000000, #000000bb, #000000), url(../imgs-icons/backgroundImages/backgroundimage2.webp);}
+
+.bg-3 {background-image: linear-gradient(0deg, #000000, #0000009c, #000000), url(../imgs-icons/backgroundImages/backgroundimage3.webp);}
+
+.container-header {
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
-.bg-1 {
-    background-image: linear-gradient(0deg, #000000, #00000041, #000000), url(../imgs-icons/backgroundImages/backgroundimage1.webp);
+section {
+    scroll-margin-top: 2.7rem;
 }
 
-.bg-2 {
-    background-image: linear-gradient(0deg, #000000, #000000bb, #000000), url(../imgs-icons/backgroundImages/backgroundimage2.webp);
+.divisor {
+    background-color: #131313;
+    height: 5rem;
 }
-
-.bg-3 {
-    background-image: linear-gradient(0deg, #000000, #0000009c, #000000), url(../imgs-icons/backgroundImages/backgroundimage3.webp);
-}
-
-
 
 /* Header Navbar */
 
@@ -158,10 +172,15 @@ button.ativar .linha_btn:nth-child(2) {
     transform: rotate(180deg);
 }
 
+
 /* Hero-Section */
 
 .position-hero {
-    top: 30%;
+    top: 32vh;
+}
+
+.position-hero h1 {
+    max-width: 800px;
 }
 
 /* Products */
@@ -169,6 +188,22 @@ button.ativar .linha_btn:nth-child(2) {
 #seloPosition {
     position: absolute;
     right: 15%;
+}
+
+
+.card-product {
+    flex: 0 0 calc(19% - 10px);
+    max-width: calc(19% - 10px);
+}
+
+.card-product-medium {
+    flex: 0 0 calc(47% - 10px);
+    max-width: calc(47% - 14px);
+}
+
+.card-product-large {
+    flex: 0 0 calc(95% - 10px);
+    max-width: calc(95% - 15px);
 }
 
 .img_hover {
@@ -184,6 +219,10 @@ button.ativar .linha_btn:nth-child(2) {
 
 /* Form */
 
+form {
+    max-width: 50rem;
+}
+
 .form-control {
     padding: 10px 10px;
 }
@@ -197,14 +236,7 @@ textarea.form-control {
     box-shadow: 0 1px 15px 3px #771616f3;
 }
 
-form button:hover {
-    background-color: #a81a1a;
-    color: #ffffff;
-    transform: scale(1.02);
-    transition: all .3s ease;
-}
-
-form button:disabled {
+form .btn-hover:disabled {
     cursor: not-allowed;
     background-color: #525252;
     transform: scale(1);
@@ -240,8 +272,8 @@ form button:disabled {
     min-width: 55px;
     background-color: #12d312;
     border-radius: 50%;
-    right: 1rem;
-    bottom: 1rem;
+    right: 2rem;
+    bottom: 2rem;
     opacity: 80%;
 }
 
@@ -260,35 +292,75 @@ form button:disabled {
 }
 
 /* Responsivity */
-
-@media screen and (max-width: 991px) {
-
-    .py-8r {
-        padding: 6rem 10px 2rem;
-    }
-
-    .pt-7r {
-        padding-top: 6rem;
-    }
-
-    .pb-7r {
-        padding-bottom: 6rem;
-    }
-
-    /* Header Navbar */
-    .header-position {
-        border-bottom: 1px solid #f00;
-    }
-
-    .position-hero {
-        top: 25%;
+@media screen and (max-width: 1400px) {
+    .card-product {
+        flex: 0 0 calc(20% - 10px);
+        max-width: calc(20% - 15px);
     }
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 991px) {
+    section {
+        scroll-margin-top: 1.2rem;
+    }
+
+    .position-hero {
+        top: 30vh;
+    }
+
     #seloPosition {
         position: relative;
         right: 0;
+    }
+
+    .card-product {
+        flex: 0 0 calc(25% - 10px);
+        max-width: calc(25% - 13px);
+    }
+
+    .card-product-medium {
+        flex: 0 0 calc(49% - 10px);
+        max-width: calc(49% - 16px);
+    }
+
+    .card-product-large {
+        flex: 0 0 calc(99% - 10px);
+        max-width: calc(99% - 10px);
+    }
+
+    .contact_icon {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .gap-3r {
+        gap: 5rem !important;
+    }
+
+    .card-product {
+        flex: 0 0 calc(33% - 10px);
+        max-width: calc(33% - 10px);
+    }
+
+    .card-product-medium {
+        flex: 0 0 calc(97% - 10px);
+        max-width: calc(97% - 10px);
+    }
+
+    .card-product-large {
+        flex: 0 0 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    }
+}
+
+@media screen and (min-width: 574px) {
+    section .container {
+        max-width: 95rem;
+        margin: 0 auto;
     }
 }
 
@@ -301,10 +373,44 @@ form button:disabled {
         width: 280px;
     }
 
+    .position-hero {
+        top: 25vh;
+    }
+
+    .card-product {
+        flex: 0 0 calc(48% - 10px);
+        max-width: calc(48% - 10px);
+    }
+
+    .card-product-medium {
+        flex: 0 0 calc(99% - 10px);
+        max-width: calc(99% - 12px);
+    }
+
+    .card-product-large {
+        flex: 0 0 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    }
+
 }
 
 @media screen and (max-width: 374px) {
     .position-hero {
-        top: 22%;
+        top: 22vh;
+    }
+
+    .card-product {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .card-product-medium {
+        flex: 0 0 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    }
+
+    .card-product-large {
+        flex: 0 0 calc(105% - 10px);
+        max-width: calc(105% - 10px);
     }
 }
