@@ -1,14 +1,24 @@
 /* Mobile menu */
 
 // Seleciona o menu e o botão (Mobile)
+const btnMenu = document.getElementById('btn_menu')
+const mobile_menu = document.getElementById('mobile_menu')
+const menuItemMobile = document.getElementById('menu-items-mobile')
+const caretIconMobile = document.querySelector('.caret-icon-mobile')
 
 // Função para abrir ou fechar menu (Mobile)
 document.getElementById('btn_menu').addEventListener('click', function () {
-    document.getElementById('btn_menu').classList.toggle('ativar')
-    document.getElementById('mobile_menu').classList.toggle('expand_menu')
+    btnMenu.classList.toggle('ativar')
+    mobile_menu.classList.toggle('expand_menu')
 })
 
 
+function CloseMobileMenu() {
+    mobile_menu.classList.remove('expand_menu');
+    btnMenu.classList.remove('ativar');
+    menuItemMobile.classList.remove('expand-dropmenu')
+    caretIconMobile.classList.remove('rotate-up')
+}
 
 window.addEventListener('scroll', function () {
     // Ativa ou desativa botão usado para voltar ao topo descendo ou subindo a página (Mobile)
@@ -17,35 +27,49 @@ window.addEventListener('scroll', function () {
 
     // Fecha o menu descendo a página (Mobile)
     if (window.scrollY > 400) {
-        mobile_menu.classList.remove('expand_menu');
-        btnMenu.classList.remove('ativar');
+        CloseMobileMenu();
+    }
+})
+
+window.addEventListener('resize', function (){
+    const desktopBreakpoint = 767;
+
+    if (window.innerWidth > desktopBreakpoint){
+        CloseMobileMenu();
     }
 })
 
 
 /* Dropmenu e Dropmenu-Mobile */
 
-
 // Seleciona o dropmenu
 const dropmenu = document.getElementById('dropmenu')
+const menuItemsDesktop = document.getElementById('menu-items')
+const caretIconDesktop = document.querySelector('.caret-icon-desktop')
+
+// Evento que abre ou fecha o dropmenu ao clicar no elemento 
+dropmenu.addEventListener('click', function () {
+    menuItemsDesktop.classList.toggle('expand-dropmenu')
+    caretIconDesktop.classList.toggle('rotate-up')
+})
 
 // Evento que abre o dropmenu quando entra no elemento ou em qualquer um de seus elementos filhos
 dropmenu.addEventListener('mouseover', () => {
-    document.getElementById('menu-items').classList.add('expand-dropmenu')
-    document.querySelector('.caret-icon-desktop').classList.add('rotate-up')
+    menuItemsDesktop.classList.add('expand-dropmenu')
+    caretIconDesktop.classList.add('rotate-up')
 })
 
 // Evento que fecha o dropmenu quando o cursor do mouse deixa o elemento ou qualquer um de seus elementos filhos
 dropmenu.addEventListener('mouseout', () => {
-    document.getElementById('menu-items').classList.remove('expand-dropmenu')
-    document.querySelector('.caret-icon-desktop').classList.remove('rotate-up')
+    menuItemsDesktop.classList.remove('expand-dropmenu')
+    caretIconDesktop.classList.remove('rotate-up')
 })
 
 
 const dropmenu_mobile = document.getElementById('dropmenu-mobile')
 dropmenu_mobile.addEventListener('click', () => {
-    document.getElementById('menu-items-mobile').classList.toggle('expand-dropmenu')
-    document.querySelector('.caret-icon-mobile').classList.toggle('rotate-up')
+    menuItemMobile.classList.toggle('expand-dropmenu')
+    caretIconMobile.classList.toggle('rotate-up')
 })
 
 /* Formulário */

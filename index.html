@@ -37,7 +37,7 @@
                     <img src="imgs-icons/logo_ADG-no-bg-200x100.png" alt="logo da empresa ADG" width="200" height="100">
                 </picture>
             </div>
-            <ul class="m-0 p-0 d-none d-lg-inline-flex gap-4 list-unstyled">
+            <ul class="m-0 p-0 d-none d-md-inline-flex gap-4 list-unstyled">
                 <li><a class="nav_link fw-bold fs-5 text-decoration-none c-red text-uppercase"
                         aria-label="Botão que leva para o início" href="#">Início</a></li>
                 <li><a class="nav_link fw-bold fs-5 text-decoration-none c-red text-uppercase"
@@ -82,7 +82,7 @@
                         aria-label="Botão que leva para a seção contato" href="#contato">Contato</a></li>
             </ul>
 
-            <button id="btn_menu" class="bg-transparent border-0 d-lg-none d-md-block"
+            <button id="btn_menu" class="bg-transparent border-0 d-md-none"
                 aria-label="Botão que abre ou fecha menu">
                 <span class="linha_btn d-block d-lg-none"></span>
                 <span class="linha_btn d-block d-lg-none"></span>
@@ -95,13 +95,13 @@
 
     <!-- Mobile Menu -->
     <div id="mobile_menu"
-        class="d-lg-none position-fixed overflow-auto vh-100 py-5 rounded-bottom mobile_menu_view bg-black top-0 z-3">
+        class="d-md-none position-fixed overflow-auto vh-100 py-5 rounded-bottom mobile_menu_view bg-black top-0 z-3">
         <nav>
             <ul class="m-0 p-0 d-flex flex-column list-unstyled gap-4 px-3">
-                <li><a class="fw-bold fs-5 text-decoration-none c-red text-uppercase" aria-label="Botão que leva para o início"
-                        href="#">Início</a></li>
-                <li><a class="fw-bold fs-5 text-decoration-none c-red text-uppercase" aria-label="Botão que leva para a seção serviços"
-                        href="#servicos">Serviços</a></li>
+                <li><a class="fw-bold fs-5 text-decoration-none c-red text-uppercase"
+                        aria-label="Botão que leva para o início" href="#">Início</a></li>
+                <li><a class="fw-bold fs-5 text-decoration-none c-red text-uppercase"
+                        aria-label="Botão que leva para a seção serviços" href="#servicos">Serviços</a></li>
                 <li id="dropmenu-mobile"><button
                         class="fw-bold p-0 fs-5 text-decoration-none border-0 bg-transparent c-red d-inline-flex align-items-center gap-2 text-uppercase"
                         aria-label="Botão que leva para a seção serviços">Produtos<svg
@@ -113,36 +113,42 @@
                     <ul id="menu-items-mobile" class="menu-items-mobile m-0 list-unstyled position-inherit bg-grey">
                         <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
                                 href="#ceramicas">Cerâmicas</a></li>
-                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase" href="#bicosdecorte">Bicos
+                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
+                                href="#bicosdecorte">Bicos
                                 de Corte</a></li>
                         <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
                                 href="#consumiveisplasma">Consumíveis Para Tochas Plasma</a></li>
                         <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
                                 href="#lentesprotetores">Lentes / Protetores</a></li>
-                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase" href="#filtros">Filtros</a>
+                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
+                                href="#filtros">Filtros</a>
                         </li>
-                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase" href="#limpeza">Limpeza</a>
+                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
+                                href="#limpeza">Limpeza</a>
                         </li>
-                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase" href="#pecasecabecote">Peças
+                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
+                                href="#pecasecabecote">Peças
                                 e Cabeçotes</a></li>
-                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase" href="#sensores">Sensores</a>
+                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
+                                href="#sensores">Sensores</a>
                         </li>
-                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase" href="#diversos">Diversos</a>
+                        <li class="p-3"><a class="fw-bold fs-6 text-decoration-none c-red text-uppercase"
+                                href="#diversos">Diversos</a>
                         </li>
                     </ul>
                 </li>
                 <li><a class="fw-bold fs-5 text-decoration-none c-red text-uppercase"
                         aria-label="Botão que leva para a seção sobre nós" href="#sobre">Sobre</a></li>
-                <li><a class="fw-bold fs-5 text-decoration-none c-red text-uppercase" aria-label="Botão que leva para a seção contato"
-                        href="#contato">Contato</a></li>
+                <li><a class="fw-bold fs-5 text-decoration-none c-red text-uppercase"
+                        aria-label="Botão que leva para a seção contato" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
         <!-- Hero Section -->
-        <section class="background bg-1 d-flex align-items-center justify-content-center align-self-center">
-            <div class="container d-flex flex-column px-4 gap-5 position-absolute position-hero">
+        <section class="vh-100 background bg-1 d-flex align-items-center justify-content-center align-self-center">
+            <div class="container d-flex flex-column px-3 px-md-4 gap-5 position-absolute position-hero">
                 <div>
                     <h1 class="display-4 fw-bold c-white2 mb-md-3 lh-1 text-uppercase opacity-75">Peças e manutenção
                         <br>para corte a
@@ -161,10 +167,10 @@
 
 
         <!-- About Us -->
-        <section id="sobre" class="background bg-0">
+        <section id="sobre" class="background bg-0 pb-5">
 
-            <div class="container py-4r px-4 d-flex flex-column gap-4 gap-md-3">
-                <h2 class="fs2r c-red fw-bold text-uppercase text-center">Sobre Nós</h2>
+            <div class="container px-3 px-md-4 d-flex flex-column gap-4 gap-md-3">
+                <h2 class="fs2r c-red fw-bold text-uppercase text-center pt-4">Sobre Nós</h2>
 
                 <div class="d-flex flex-column-reverse flex-md-row align-items-center">
                     <h2 class="c-white1 fw6 m-0 mt-4 me-md-auto text-center text-md-start text-uppercase">
@@ -173,7 +179,7 @@
                     <img class="me-lg-4" src="imgs-icons/logo_ADG-no-bg-250x150.png" alt="logo da empresa ADG"
                         width="250" height="150">
                 </div>
-                <div class="pb-2 fs-100p lt-s1 text-center text-md-start px-2 px-sm-0" style="max-width: 900px;">
+                <div class="pb-2 fs-100p lt-s1 text-center text-md-start px-2 px-md-0 about-text-description">
                     <p class="m-0 c-white1">Fundada em 2022, a <b>ADG Soluções
                             Industriais</b> atua oferecendo <b>peças de reposição para máquinas de corte a
                             laser</b> e serviços de <b>manutenção preventiva e preditiva em equipamentos
@@ -229,11 +235,10 @@
 
         <!-- Services -->
         <section id="servicos" class="background bg-3">
-
-            <div class="container py-4r px-2 px-sm-4">
-                <h2 class="fs2r c-red fw-bold text-uppercase text-center">Nossos Serviços</h2>
+            <h2 class="fs2r c-red fw-bold text-uppercase text-center py-4">Nossos Serviços</h2>
+            <div class="container px-3 px-md-4 pb-5r">
                 <!-- Main Service -->
-                <div class="d-flex flex-column gap-3r rounded-4 bg-black bg-opacity-50 py-4r px-1 px-sm-2">
+                <div class="d-flex flex-column gap-3r rounded-4 bg-black bg-opacity-50 px-1 px-sm-2 py-4">
                     <h2 class="c-white1 fw-bold text-center">Plano de Manutenção Preventiva e Preditiva</h2>
                     <div class="d-flex flex-column flex-md-row gap-5">
                         <div class="w-100 d-flex flex-column">
@@ -560,25 +565,25 @@
 
 
         <!-- Products -->
-        <section id="produtos" class="background py-4r px-1 px-lg-0 bg-0 d-flex flex-column">
+        <section id="produtos" class="background px-0 bg-0 d-flex flex-column">
             <div
-                class="d-flex justify-content-center position-relative flex-column px-3 px-lg-0 flex-lg-row text-center gap-md-3 align-items-center">
+                class="d-flex justify-content-center position-relative flex-column px-3 py-3 px-lg-0 flex-lg-row text-center gap-md-3 align-items-center">
                 <h2 class="fs2r c-red fw-bold text-uppercase">Nossos Produtos</h2>
                 <img id="seloPosition" loading="lazy" src="imgs-icons/selo_original.png" alt="Selo de produto original">
             </div>
 
             <!-- Product 1 -->
-            <section id="ceramicas" class="d-flex flex-column gap-5 py-4r bg-01 bg-opacity-75">
+            <section id="ceramicas" class="d-flex flex-column bg-01 background bg-opacity-75">
                 <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Cerâmicas</h3>
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Cerâmicas</h3>
                 </div>
-                <div class="container d-flex justify-content-center px-0 flex-wrap gap-1r">
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
-                                src="imgs-icons/products/ceramics/kt-b2/kt-b2_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/kt-b2/kt-b2_pic0.webp"
                                 alt="Cerâmica modelo KT-B2 para máquina de corte a laser">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt-b2/kt-b2_pic1.webp"
                                 alt="Cerâmica modelo KT-B2 para máquina de corte a laser">
                         </div>
@@ -591,11 +596,11 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100" src="imgs-icons/products/ceramics/kt-x/kt-x_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/kt-x/kt-x_pic0.webp"
                                 alt="Cerâmica modelo KT-X para máquina de corte a laser">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt-x/kt-x_pic1.webp"
                                 alt="Cerâmica modelo KT-X para máquina de corte a laser">
                         </div>
@@ -608,12 +613,11 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
-                                src="imgs-icons/products/ceramics/kt-xb/kt-xb_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/kt-xb/kt-xb_pic0.webp"
                                 alt="Cerâmica modelo KT-XB para máquina de corte a laser">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt-xb/kt-xb_pic1.webp"
                                 alt="Cerâmica modelo KT-XB para máquina de corte a laser">
                         </div>
@@ -626,12 +630,11 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
-                                src="imgs-icons/products/ceramics/d41-m11/d41-m11_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/d41-m11/d41-m11_pic0.webp"
                                 alt="Cerâmica modelo D41-M11 para máquina de corte a laser">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/d41-m11/d41-m11_pic1.webp"
                                 alt="Cerâmica modelo D41-M11 para máquina de corte a laser">
                         </div>
@@ -644,12 +647,11 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
-                                src="imgs-icons/products/ceramics/fc-40/fc-40_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/fc-40/fc-40_pic0.webp"
                                 alt="Cerâmica modelo FC-40 para máquina de corte de tubo">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/fc-40/fc-40_pic1.webp"
                                 alt="Cerâmica modelo FC-40 para máquina de corte de tubo">
                         </div>
@@ -662,12 +664,11 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
-                                src="imgs-icons/products/ceramics/wtc-04/wtc-04_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/wtc-04/wtc-04_pic0.webp"
                                 alt="Cerâmica modelo WTC-04 para máquina de corte de tubo">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/wtc-04/wtc-04_pic1.webp"
                                 alt="Cerâmica modelo WTC-04 para máquina de corte de tubo">
                         </div>
@@ -680,12 +681,11 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
-                                src="imgs-icons/products/ceramics/kt-kn/kt-kn_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/kt-kn/kt-kn_pic0.webp"
                                 alt="Cerâmica modelo KT-KN para máquina de corte de tubo">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt-kn/kt-kn_pic1.webp"
                                 alt="Cerâmica modelo KT-KN para máquina de corte de tubo">
                         </div>
@@ -698,12 +698,11 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
-                                src="imgs-icons/products/ceramics/kt-ks/kt-ks_pic0.webp"
+                            <img class="rounded-top w-100" src="imgs-icons/products/ceramics/kt-ks/kt-ks_pic0.webp"
                                 alt="Cerâmica modelo KT-KS para máquina de corte de tubo">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/ceramics/kt-ks/kt-ks_pic1.webp"
                                 alt="Cerâmica modelo KT-KS para máquina de corte de tubo">
                         </div>
@@ -718,136 +717,147 @@
                 </div>
             </section>
 
-
             <!-- Product 2 -->
-            <section id="bicosdecorte" class="d-flex flex-column gap-5 py-4r bg-02 bg-opacity-75">
+            <section id="bicosdecorte" class="d-flex flex-column background bg-01 bg-opacity-75">
                 <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Bicos de Corte</h3>
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Bicos de Corte</h3>
                 </div>
-
-                <div class="container d-flex justify-content-center px-2 flex-wrap gap-1r">
-                    <article class="d-flex flex-column text-center bg-black bd-red rounded card-product-large">
-                        <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100 h-img-sm"
-                                src="imgs-icons/products/bicos-corte/bicos-de-corte_pic0.webp"
-                                alt="Imagem de alguns bicos de corte">
-                        </div>
-                        <p class="my-3 px-2 c-white1">Trabalhamos com as melhores marcas de bicos para corte a
-                            laser, oferecendo uma variedade que inclui bicos de corte simples e duplo, em vários
-                            tamanhos e modelos, garantindo o
-                            ajuste perfeito para sua máquina e a máxima precisão no corte</p>
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex flex-column text-center bg-black bg-opacity-50 col-6 col-md-3 bd-red">
-                                <div id="bicos-duplo-corte" class="carousel slide">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="imgs-icons/products/bicos-corte/duplo-maquina-corte/duplo-maquina-corte_pic0.webp"
-                                                class="d-block w-100" alt="Bico duplo para maquina de corte de chapa">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs-icons/products/bicos-corte/duplo-maquina-corte/duplo-maquina-corte_pic1.webp"
-                                                class="d-block w-100" alt="Bico duplo para maquina de corte de chapa">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs-icons/products/bicos-corte/duplo-maquina-corte/duplo-maquina-corte_pic2.webp"
-                                                class="d-block w-100" alt="Bico duplo para maquina de corte de chapa">
-                                        </div>
+                <div class="py-5r">
+                    <p class="c-white1 px-3 px-md-0 fw-bold fs-5 text-center mx-auto mb-5">
+                        Trabalhamos com as melhores marcas de bicos para corte a laser, oferecendo uma variedade que
+                        inclui
+                        bicos de corte simples e duplo, em vários tamanhos e modelos, garantindo o ajuste perfeito para
+                        sua
+                        máquina e a máxima precisão no corte
+                    </p>
+                    <div class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r my-auto">
+                        <article class="d-flex flex-column text-center bg-black card-product rounded">
+                            <div id="bicos-duplo-corte" class="carousel slide">
+                                <div class="carousel-inner rounded-top">
+                                    <div class="carousel-item active">
+                                        <img src="imgs-icons/products/bicos-corte/duplo-maquina-corte/duplo-maquina-corte_pic0.webp"
+                                            class="d-block w-100" alt="Bico duplo para maquina de corte de chapa">
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#bicos-duplo-corte" data-bs-slide="prev" data-bs-theme="dark"
-                                        aria-label="Imagem Anterior">
-                                        <span class="carousel-control-prev-icon w-75" aria-hidden="true"></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#bicos-duplo-corte" data-bs-slide="next" data-bs-theme="dark"
-                                        aria-label="Próxima Imagem">
-                                        <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                                <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Duplo</h4>
-                                <p class="mb-0 px-1 c-white1">Para máquinas de corte de chapa</p>
-                                <p class="mb-2 px-1 c-white1"><b>Modelos X, E, C</b></p>
-                            </div>
-
-                            <div class="d-flex flex-column text-center bg-black bg-opacity-50 col-6 col-md-3 bd-red">
-                                <div id="bicos-simples-corte" class="carousel slide">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="imgs-icons/products/bicos-corte/simples-maquina-corte/simples-maquina-corte_pic0.webp"
-                                                class="d-block w-100" alt="Bico simples para maquina de corte de chapa">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs-icons/products/bicos-corte/simples-maquina-corte/simples-maquina-corte_pic1.webp"
-                                                class="d-block w-100" alt="Bico simples para maquina de corte de chapa">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="imgs-icons/products/bicos-corte/simples-maquina-corte/simples-maquina-corte_pic2.webp"
-                                                class="d-block w-100" alt="Bico simples para maquina de corte de chapa">
-                                        </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs-icons/products/bicos-corte/duplo-maquina-corte/duplo-maquina-corte_pic1.webp"
+                                            class="d-block w-100" alt="Bico duplo para maquina de corte de chapa">
                                     </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#bicos-simples-corte" data-bs-slide="prev" data-bs-theme="dark"
-                                        aria-label="Imagem Anterior">
-                                        <span class="carousel-control-prev-icon w-75" aria-hidden="true"></span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#bicos-simples-corte" data-bs-slide="next" data-bs-theme="dark"
-                                        aria-label="Próxima Imagem">
-                                        <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
-                                    </button>
+                                    <div class="carousel-item">
+                                        <img src="imgs-icons/products/bicos-corte/duplo-maquina-corte/duplo-maquina-corte_pic2.webp"
+                                            class="d-block w-100" alt="Bico duplo para maquina de corte de chapa">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs-icons/products/bicos-corte/duplo-maquina-corte/duplo-maquina-corte_pic3.webp"
+                                            class="d-block w-100" alt="Bico duplo para maquina de corte de chapa">
+                                    </div>
                                 </div>
-                                <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Simples</h4>
-                                <p class="mb-2 px-1 c-white1">Para máquinas de corte de chapa</p>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#bicos-duplo-corte"
+                                    data-bs-slide="prev" data-bs-theme="dark" aria-label="Imagem Anterior">
+                                    <span class="carousel-control-prev-icon w-75" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#bicos-duplo-corte"
+                                    data-bs-slide="next" data-bs-theme="dark" aria-label="Próxima Imagem">
+                                    <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
+                                </button>
                             </div>
+                            <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Duplo</h4>
+                            <p class="mb-0 px-1 c-white1">Para máquinas de corte de chapa</p>
+                            <p class="mb-2 px-1 c-white1"><b>Modelos X, E, C</b></p>
+                            <a class="btn-hover text-decoration-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw-bold rounded-bottom text-uppercase"
+                                href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento+para+um+dos+seus+produtos.+"
+                                target="_blank" rel="noopener noreferrer external"
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
+                                Orçamento</a>
+                        </article>
 
-                            <div class="d-flex flex-column text-center bg-black bg-opacity-50 col-6 col-md-3 bd-red">
-                                <div class="position-relative overflow-hidden">
-                                    <img class="w-100"
-                                        src="imgs-icons/products/bicos-corte/duplo-maquina-tubo/duplo-maquina-tubo_pic0.webp"
-                                        alt="Bico duplo para maquina de corte de tubo">
+                        <article class="d-flex flex-column text-center bg-black card-product rounded">
+                            <div id="bicos-simples-corte" class="carousel slide">
+                                <div class="carousel-inner rounded-top">
+                                    <div class="carousel-item active">
+                                        <img src="imgs-icons/products/bicos-corte/simples-maquina-corte/simples-maquina-corte_pic0.webp"
+                                            class="d-block w-100" alt="Bico simples para maquina de corte de chapa">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs-icons/products/bicos-corte/simples-maquina-corte/simples-maquina-corte_pic1.webp"
+                                            class="d-block w-100" alt="Bico simples para maquina de corte de chapa">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs-icons/products/bicos-corte/simples-maquina-corte/simples-maquina-corte_pic2.webp"
+                                            class="d-block w-100" alt="Bico simples para maquina de corte de chapa">
+                                    </div>
                                 </div>
-                                <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Duplo</h4>
-                                <p class="mb-2 px-1 c-white1">Para máquinas de corte de tubo</p>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#bicos-simples-corte" data-bs-slide="prev" data-bs-theme="dark"
+                                    aria-label="Imagem Anterior">
+                                    <span class="carousel-control-prev-icon w-75" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#bicos-simples-corte" data-bs-slide="next" data-bs-theme="dark"
+                                    aria-label="Próxima Imagem">
+                                    <span class="carousel-control-next-icon w-75" aria-hidden="true"></span>
+                                </button>
                             </div>
+                            <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Simples</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de corte de chapa</p>
+                            <a class="btn-hover text-decoration-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw-bold rounded-bottom text-uppercase"
+                                href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento+para+um+dos+seus+produtos.+"
+                                target="_blank" rel="noopener noreferrer external"
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
+                                Orçamento</a>
+                        </article>
 
-                            <div class="d-flex flex-column text-center bg-black bg-opacity-50 col-6 col-md-3 bd-red">
-                                <div class="position-relative overflow-hidden">
-                                    <img class="w-100"
-                                        src="imgs-icons/products/bicos-corte/simples-maquina-tubo/simples-maquina-tubo_pic0.webp"
-                                        alt="Bico simples para maquina de corte de tubo">
-                                </div>
-                                <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Simples</h4>
-                                <p class="mb-2 px-1 c-white1">Para máquinas de corte de tubo</p>
+                        <article class="d-flex flex-column text-center bg-black card-product rounded">
+                            <div class="position-relative overflow-hidden">
+                                <img class="w-100 rounded-top"
+                                    src="imgs-icons/products/bicos-corte/duplo-maquina-tubo/duplo-maquina-tubo_pic0.webp"
+                                    alt="Bico duplo para maquina de corte de tubo">
                             </div>
-                        </div>
-                        <a class="btn-hover text-decoration-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw-bold rounded-bottom text-uppercase"
-                            href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento+para+um+dos+seus+produtos.+"
-                            target="_blank" rel="noopener noreferrer external"
-                            aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
-                            Orçamento</a>
-                    </article>
+                            <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Duplo</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de corte de tubo</p>
+                            <a class="btn-hover text-decoration-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw-bold rounded-bottom text-uppercase"
+                                href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento+para+um+dos+seus+produtos.+"
+                                target="_blank" rel="noopener noreferrer external"
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
+                                Orçamento</a>
+                        </article>
+
+                        <article class="d-flex flex-column text-center bg-black card-product rounded">
+                            <div class="position-relative overflow-hidden">
+                                <img class="w-100 rounded-top"
+                                    src="imgs-icons/products/bicos-corte/simples-maquina-tubo/simples-maquina-tubo_pic0.webp"
+                                    alt="Bico simples para maquina de corte de tubo">
+                            </div>
+                            <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Simples</h4>
+                            <p class="mb-2 px-1 c-white1">Para máquinas de corte de tubo</p>
+                            <a class="btn-hover text-decoration-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw-bold rounded-bottom text-uppercase"
+                                href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento+para+um+dos+seus+produtos.+"
+                                target="_blank" rel="noopener noreferrer external"
+                                aria-label="Botão para solicitar orçamento que leva para o whatsapp">Peça Seu
+                                Orçamento</a>
+                        </article>
+                    </div>
                 </div>
             </section>
 
 
             <!-- Product 3 -->
-            <section id="consumiveisplasma" class="d-flex flex-column gap-5 py-4r bg-02 bg-opacity-75">
-                <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Consumíveis Para Tochas Plasma
+            <section id="consumiveisplasma" class="d-flex flex-column bg-01 background bg-opacity-75">
+                <div class="divisor d-flex align-items-center justify-content-center px-1">
+                    <h3 class="c-white1 fw-bold text-uppercase m-0 text-center">Consumíveis Para Tochas Plasma
                     </h3>
                 </div>
-                <div class="container d-flex justify-content-center px-2 flex-wrap gap-1r">
-
-                    <article class="d-flex flex-column text-center bg-black bd-red rounded card-product-large">
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
+                    <article class="d-flex flex-column text-center bg-black rounded card-product-large">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100 h-img-sm"
+                            <img class="rounded-top w-100 h-img-sm"
                                 src="imgs-icons/products/consumiveis-para-tochas-plasma/consumiveis-para-tochas-plasma_pic0.webp"
                                 alt="Imagem de alguns Consumiveis Para Tochas Plasma">
                         </div>
-                        <p class="my-3 px-2 c-white1">Trabalhamos com bicos, bocais, capas de retenção e
+                        <h4 class="my-3 px-2 c-white1 fs-5">Trabalhamos com bicos, bocais, capas de retenção e
                             eletrodos de plasma, oferecendo qualidade e compatibilidade com diversos modelos de
                             tocha plasma. Conte com produtos duráveis, prontos para entrega e suporte técnico
-                            especializado para manter sua produção sempre ativa</p>
+                            especializado para manter sua produção sempre ativa</h4>
                         <a class="btn-hover text-decoration-none c-white1 align-items-center h-3r mt-auto fs-100p bg-red2 d-flex justify-content-center text-center fw-bold rounded-bottom text-uppercase"
                             href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento+para+um+dos+seus+produtos.+"
                             target="_blank" rel="noopener noreferrer external"
@@ -858,23 +868,24 @@
             </section>
 
             <!-- Product 4 -->
-            <section id="lentesprotetores" class="d-flex flex-column gap-5 py-4r bg-02 bg-opacity-75">
+            <section id="lentesprotetores" class="d-flex flex-column bg-01 background bg-opacity-75">
                 <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Lentes / Protetores</h3>
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Lentes / Protetores</h3>
                 </div>
-                <div class="container d-flex justify-content-center px-0 flex-wrap gap-1r">
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
 
-                    <article class="d-flex flex-column text-center bg-black card-product-medium bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product-medium rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/lentes-e-protetores/lentes-cabecote_pic0.webp"
                                 alt="Lentes para Cabeçote">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/lentes-e-protetores/lentes-cabecote_pic1.webp"
                                 alt="Lentes para Cabeçote">
                         </div>
                         <h4 class="c-white1 fw-bold px-1 my-2 fs-5">Lentes</h4>
-                        <ul class="d-grid gap-2 justify-content-around list-style c-white1 text-start py-1 ps-2r pe-1">
+                        <ul class="justify-content-around list-style c-white1 text-start py-1 ps-2r pe-1">
                             <li>Lentes óticas, para cabeçotes <b>precitec, han's laser,
                                     salvagnini, bystronic</b> e outros;</li>
                             <li>Lente focal, para cabeçotes <b>precitec, han's laser,
@@ -890,12 +901,12 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product-medium bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product-medium rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/lentes-e-protetores/protetores-lente_pic0.webp"
                                 alt="Protetor para Lentes">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/lentes-e-protetores/protetores-lente_pic1.webp"
                                 alt="Protetor para Lentes">
                         </div>
@@ -938,15 +949,15 @@
             </section>
 
             <!-- Product 5 -->
-            <section id="filtros" class="d-flex flex-column gap-5 py-4r bg-02 bg-opacity-75">
+            <section id="filtros" class="d-flex flex-column bg-01 background bg-opacity-75">
                 <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Filtros</h3>
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Filtros</h3>
                 </div>
-                <div class="container d-flex justify-content-center px-0 flex-wrap gap-1r">
-
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="elementos-para-filtros" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/filtros/elementos-para-secador/elemento-secador_pic0.webp"
                                         class="d-block w-100" alt="Elemento para secador">
@@ -979,9 +990,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="filtro-de-ar" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/filtros/filtros-de-ar/filtro-de-ar_pic0.webp"
                                         class="d-block w-100" alt="Filtro de Ar">
@@ -1021,12 +1032,12 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/filtros/filtros-parker/filtro-parker_pic0.webp"
                                 alt="Filtro Parker">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/filtros/filtros-parker/filtro-parker_pic1.webp"
                                 alt="Filtro Parker">
                         </div>
@@ -1038,12 +1049,12 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/filtros/filtros-de-oleo/filtro-de-oleo-schulz_pic0.webp"
                                 alt="Filtro de Óleo Schulz">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/filtros/filtros-de-oleo/filtro-de-oleo-schulz_pic1.webp"
                                 alt="Filtro de Óleo Schulz">
                         </div>
@@ -1055,12 +1066,12 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/filtros/separador-de-elementos/separador-de-elementos_pic0.webp"
                                 alt="Separador de Elementos">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/filtros/separador-de-elementos/separador-de-elementos_pic1.webp"
                                 alt="Separador de Elementos">
                         </div>
@@ -1072,9 +1083,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/filtros/filtro-messa/filtro-messa_pic0.webp"
                                 alt="Filtro Messa">
                         </div>
@@ -1086,9 +1097,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="filtro-rayce" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/filtros/filtro-rayce/filtro-rayce_pic0.webp"
                                         class="d-block w-100" alt="Filtro Rayce">
@@ -1123,15 +1134,15 @@
 
 
             <!-- Product 6 -->
-            <section id="limpeza" class="d-flex flex-column gap-5 py-4r bg-02 bg-opacity-75">
+            <section id="limpeza" class="d-flex flex-column bg-01 background bg-opacity-75">
                 <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Limpeza</h3>
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Limpeza</h3>
                 </div>
-                <div class="container d-flex justify-content-center px-0 flex-wrap gap-1r">
-
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="alcoolIso" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/limpeza/alcoolIso/todos-tamanhos.webp"
                                         class="d-block w-100" alt="Álcool Isopropílico Todos os tamanhos">
@@ -1174,9 +1185,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="removedor-de-po" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/limpeza/removedor-de-po/removedor-de-po_pic0.webp"
                                         class="d-block w-100" alt="Removedor de Pó">
@@ -1207,12 +1218,12 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/limpeza/escova-de-aco/escova-de-aco_pic0.webp"
                                 alt="Escova de Aço">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/limpeza/escova-de-aco/escova-de-aco_pic1.webp"
                                 alt="Escova de Aço">
                         </div>
@@ -1224,9 +1235,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/limpeza/spray-solvente/spray-solvente-ipa.webp"
                                 alt="Spray Solvente">
                         </div>
@@ -1238,12 +1249,12 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/limpeza/cotonete/cotonete-plotter_pic0.webp"
                                 alt="Cotonete Plotter">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/limpeza/cotonete/cotonete-plotter_pic1.webp"
                                 alt="Cotonete Plotter">
                         </div>
@@ -1264,18 +1275,18 @@
 
 
             <!-- Product 7 -->
-            <section id="pecasecabecote" class="d-flex flex-column gap-5 py-4r bg-02 bg-opacity-75">
+            <section id="pecasecabecote" class="d-flex flex-column bg-01 background bg-opacity-75">
                 <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Peças e Cabeçotes</h3>
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Peças e Cabeçotes</h3>
                 </div>
-                <div class="container d-flex justify-content-center px-0 flex-wrap gap-1r">
-
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/pecas-e-cabecotes/aneis-vedacao-cabecote/aneis-vedacao-cabecote_pic0.webp"
                                 alt="Aneis de Vedação para Cabeçote">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/pecas-e-cabecotes/aneis-vedacao-cabecote/aneis-vedacao-cabecote_pic1.webp"
                                 alt="Aneis de Vedação para Cabeçote">
                         </div>
@@ -1287,9 +1298,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="sensores_para_cabecote" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/pecas-e-cabecotes/sensores-para-cabecote/sensor-cabecote_pic0.webp"
                                         class="d-block w-100" alt="Sensor para Cabeçote">
@@ -1320,9 +1331,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="cabecotes" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/pecas-e-cabecotes/cabecotes/cabecote_pic0.webp"
                                         class="d-block w-100" alt="Cabeçote Precitec">
@@ -1361,15 +1372,17 @@
             </section>
 
             <!-- Product 8 -->
-            <section id="sensores" class="d-flex flex-column gap-5 py-4r bg-02 bg-opacity-75">
-                <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Sensores</h3>
+            <section id="sensores" class="d-flex flex-column bg-01 background bg-opacity-75">
+                <div class="divisor d-flex flex-column align-items-center justify-content-center">
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Sensores</h3>
+                    <p class="mb-0 c-white2 px-1 text-center fw-bold fs-5">Faceados e não faceados</p>
                 </div>
-                <p class="mb-2 c-white2 mb-5 px-1 text-center fw-bold fs-5">Faceados e não faceados</p>
-                <div class="container d-flex justify-content-center px-0 flex-wrap gap-1r">
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="capacitivos" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/sensores/capacitivos/c18-8-dpc.webp"
                                         class="d-block w-100" alt="Sensor Capacitivo c18-8-dpc">
@@ -1404,9 +1417,9 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="indutivos" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/sensores/indutivos/i12-4-dnc-k12.webp"
                                         class="d-block w-100" alt="Sensor Indutivo i12-4-dnc-k12">
@@ -1444,15 +1457,15 @@
             </section>
 
             <!-- Product 9 -->
-            <section id="diversos" class="d-flex flex-column gap-5 py-4r bg-03 bg-opacity-75">
+            <section id="diversos" class="d-flex flex-column bg-01 background bg-opacity-75">
                 <div class="divisor d-flex align-items-center justify-content-center">
-                    <h3 class="c-white1 fw-bold text-uppercase">Diversos</h3>
+                    <h3 class="c-white1 fw-bold text-uppercase m-0">Diversos</h3>
                 </div>
-                <div class="container d-flex justify-content-center px-0 flex-wrap gap-1r">
-
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                <div
+                    class="container d-flex justify-content-center flex-wrap px-3 px-md-4 gap-1r py-5r my-auto">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div id="patins" class="carousel slide">
-                            <div class="carousel-inner rounded-top bd-red">
+                            <div class="carousel-inner rounded-top">
                                 <div class="carousel-item active">
                                     <img src="imgs-icons/products/diversos/patins/patins_pic0.webp"
                                         class="d-block w-100" alt="Patins">
@@ -1491,12 +1504,12 @@
                             Orçamento</a>
                     </article>
 
-                    <article class="d-flex flex-column text-center bg-black card-product bd-red rounded">
+                    <article class="d-flex flex-column text-center bg-black card-product rounded">
                         <div class="position-relative overflow-hidden">
-                            <img class="rounded-top bd-red w-100"
+                            <img class="rounded-top w-100"
                                 src="imgs-icons/products/diversos/oleo-e-graxa/oleo-lubrax-compsor-pao.webp"
                                 alt="Óleo Lubrax Compsor PAO">
-                            <img class="rounded-top bd-red w-100 img_hover"
+                            <img class="rounded-top w-100 img_hover"
                                 src="imgs-icons/products/diversos/oleo-e-graxa/graxa-castanha-mp2.webp"
                                 alt="Graxa Castanha mp2">
                         </div>
@@ -1520,7 +1533,7 @@
         <!-- Contact -->
         <section id="contato" class="background bg-2">
 
-            <div class="container py-4r px-2 px-sm-5">
+            <div class="container px-3 px-sm-5 py-4">
                 <div class="text-center mb-5">
                     <h2 class="fs2r c-red fw-bold text-uppercase mb-4">Fale Conosco</h2>
                     <p class="c-white2">Tem alguma dúvida ou gostaria de solicitar um orçamento? Envie sua mensagem.</p>
@@ -1528,25 +1541,25 @@
 
                 <form action="php/enviar-email.php" method="POST" class="col-lg-8 mx-auto" id="form">
 
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label for="nome" class="form-label c-white2">Nome</label>
                         <input type="text" class="form-control border-3 rounded-1" id="nome" name="nome"
                             placeholder="Digite seu nome" required>
                     </div>
 
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label for="email" class="form-label c-white2">E-mail</label>
                         <input type="email" class="form-control border-3 rounded-1" id="email" name="email"
                             placeholder="seu.email@exemplo.com" required>
                     </div>
 
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label for="telefone" class="form-label c-white2">Telefone (Opcional)</label>
                         <input type="tel" class="form-control border-3 rounded-1" id="telefone" name="telefone"
                             placeholder="(00) 00000-0000">
                     </div>
 
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label for="mensagem" class="form-label c-white2">Sua Mensagem</label>
                         <textarea class="form-control border-3 rounded-1" id="mensagem" name="mensagem" rows="8"
                             placeholder="Digite sua dúvida ou solicitação aqui..." required maxlength="3000"></textarea>

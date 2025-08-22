@@ -1,6 +1,7 @@
 /* Padding */
 .ps-2r {padding-left: 1.8rem;}
-.py-4r {padding: 4rem 0;}
+.py-5r {padding: 5rem 0;}
+.pb-5r {padding-bottom: 5rem;}
 
 /* Margin */
 .mb-5r {margin-bottom: 5rem;}
@@ -15,7 +16,7 @@
 
 /* Gap */
 .gap-3r {gap: 3rem;}
-.gap-1r {gap: .8rem;}
+.gap-1r {gap: 1rem;}
 
 
 /* Font Size */
