@@ -72,7 +72,7 @@ div #btnSubmitWhatsapp:hover {
 
 
 .container-header {
-    max-width: 1400px;
+    max-width: 1360px;
     margin: 0 auto;
 }
 
@@ -330,6 +330,12 @@ form .btn-hover:disabled {
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    .container-header {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -344,6 +350,11 @@ form .btn-hover:disabled {
     }
 
     .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .container-header {
         max-width: 900px;
         margin: 0 auto;
     }
