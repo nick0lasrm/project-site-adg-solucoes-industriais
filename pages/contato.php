@@ -44,9 +44,7 @@
                     Sua Mensagem
                 </label>
                 <textarea class="form-control border-3 rounded-1" id="mensagem" name="mensagem" rows="8"
-                    placeholder="Digite sua dúvida ou solicitação aqui..." required maxlength="3000">
-                    </textarea>
-
+                    placeholder="Digite sua dúvida ou solicitação aqui..." required maxlength="3000"></textarea>
                 <div id="contadorContainer" style="text-align: right; font-size: 0.9em; color: #636363;">
                     <span id="caracteresAtuais">
                         0

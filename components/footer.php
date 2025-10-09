@@ -1,11 +1,12 @@
 <footer class="py-3 bdt-grey bg-black">
     <div class="container pb-4">
-        <img src="../img/logo_ADG-no-bg-200x100.png" alt="logo da empresa ADG" width="120" height="60">
+        <img src="img/logo_ADG-no-bg-200x100.png" alt="logo da empresa ADG" width="120"
+            height="60">
         <div class="d-flex flex-column mt-2">
             <p class="mb-3 c-white2">Rua Antonio Bravo Plaça, 320 - Ipatinga - Sorocaba/SP</p>
             <p class="mb-3 c-white2">vendas@adgsolucoesindustriais.com.br</p>
             <p class="mb-3 c-white2">+55 15 99677-1241</p>
-            <div class="d-flex gap-1r">
+            <div class="d-flex gap-2">
                 <a class="c-white2" href="https://instagram.com/adgsolucoesindustriais"
                     aria-label="Botão que leva para o instagram">
                     <div class="icon_link rounded-4 bg-red2 p-2">
@@ -40,7 +41,7 @@
 <div class="position-fixed contact_icon" title="Mande uma mensagem!">
     <a href="https://wa.me/5515996771241?text=Olá!+Vim+pelo+site+e+gostaria+de+solicitar+um+orçamento+para+um+dos+seus+serviços.+ "
         target="_blank" rel="noopener noreferrer external" aria-label="Botão que leva para o whatsapp">
-        <img class="p-1" src="../img/icons8-whatsapp.svg" alt="icon_whatsapp" width="65" height="65">
+        <img class="p-1" src="img/icons8-whatsapp.svg" alt="icon_whatsapp" width="65" height="65">
     </a>
 </div>
 
@@ -53,7 +54,7 @@
     </svg>
 </a>
 
-<script src="../script/script.js" defer></script>
+<script src="script/script.js" defer></script>
 <script>
     // Envio do fomulário via whatsapp
 
