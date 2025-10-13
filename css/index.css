@@ -1,3 +1,35 @@
+:root{
+    --vermelho-fundo: #b30000;
+    --vermelho-principal:#c00000;
+    --vermelho-secundario: #ff0000;
+}
+
+.bg-red{
+    background-color: var(--vermelho-principal);
+}
+
+/* Color */
+.c-red {color: #c71414;}
+.c-white1 {color: #dbdbdb;}
+.c-white2 {color: #d1d1d1;}
+
+/* Font Size */
+.fs2r {font-size: 2rem;} 
+.fs-smr {font-size: smaller;}
+.fs-100p {font-size: 105%;}
+
+
+/* Height */
+.h-3r {height: 3.5rem;}
+.h-4r {height: 4.5rem;}
+
+
+/* Background Color */
+.bg-red1 {background-color: #530707ad;}
+.bg-red2 {background-color: #7a0707;}
+.bg-grey {background-color: #050505;}
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -26,8 +58,7 @@ html {
 }
 
 .btn-hover:hover {
-    background-color: #c21818;
-    color: #ffffff;
+    background-color: var(--vermelho-secundario);
 }
 
 div #btnSubmitWhatsapp:hover {
@@ -38,12 +69,12 @@ div #btnSubmitWhatsapp:hover {
 
 .btn-animation:hover {
     transform: scale(1.02);
-}
+}   
 
 /*  Background Sections  */
 
 .background {
-    min-height: 90vh;
+    min-height: 65vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,8 +89,8 @@ div #btnSubmitWhatsapp:hover {
     min-height: 100vh;
 }
 
-.bg-1 {
-    background-image: linear-gradient(0deg, #000000, #00000049, #000000), url(../img/backgroundImages/backgroundimage1.webp);
+.bg-principal {
+    background-image: linear-gradient(0deg, #250000cb, #70000040, #250000cb), url(../img/backgroundImages/teste.webp);
 }
 
 .bg-2 {
@@ -70,11 +101,6 @@ div #btnSubmitWhatsapp:hover {
     background-image: linear-gradient(0deg, #000000, #00000059, #000000), url(../img/backgroundImages/backgroundimage3.webp);
 }
 
-
-.container-header {
-    max-width: 1360px;
-    margin: 0 auto;
-}
 
 #produtos section {
     scroll-margin-top: 7rem;
@@ -102,7 +128,7 @@ section {
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color: #c71414;
+    background-color: var(--vermelho-principal);
     transform: scaleX(0);
     transition: .3s ease;
 }
@@ -114,7 +140,7 @@ section {
 .linha_btn {
     width: 28px;
     height: 3px;
-    background-color: #c71414;
+    background-color: #000000;
     margin: 5px auto;
     position: relative;
     transform-origin: center;
@@ -185,15 +211,24 @@ button.ativar .linha_btn:nth-child(2) {
 }
 
 
-/* Hero-Section */
+/* HOME */
 
 .position-hero {
-    top: 32vh;
+    top: 25vh;
 }
 
 .position-hero h1 {
     max-width: 800px;
 }
+
+.position-hero p {
+    max-width: 450px;
+}
+
+.card-flip {
+    box-shadow: 0px 0px 20px 5px #e0e0e0;
+}
+
 
 
 /* About Us Section */
@@ -251,8 +286,8 @@ form {
 }
 
 .form-control:focus {
-    border-color: #771616f3;
-    box-shadow: 0 1px 15px 3px #771616f3;
+    border-color: var(--vermelho-principal);
+    box-shadow: 0 1px 15px 3px var(--vermelho-principal);
 }
 
 form .btn-hover:disabled {
@@ -276,7 +311,7 @@ form .btn-hover:disabled {
 
 .back_top:hover {
     scale: 1.1;
-    color: #a11010;
+    color: var(--vermelho-principal);
 
 }
 
@@ -305,9 +340,15 @@ form .btn-hover:disabled {
 
 /* Footer */
 
+.icon_link{
+    border-radius: 100%;
+    color: var(--vermelho-principal);
+    border: 1px solid var(--vermelho-principal);
+}
+
 .icon_link:hover {
-    scale: 1.1;
-    color: #fff;
+    color: var(--vermelho-secundario);
+    border-color: var(--vermelho-secundario);
 }
 
 /* Responsivity */
